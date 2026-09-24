@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+
+    padding: 40px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* White + light blue gradient */
+
+    background:
+        linear-gradient(
+            110deg,
+            #ffffff 0%,
+            #ffffff 48%,
+            #e8f7ff 48%,
+            #8fc9e6 100%
+        );
+
+    color: #222;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.grid-box {
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1.1fr) minmax(350px, 0.9fr);
+
+    gap: 40px;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+
+        margin-top: 30px;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    min-width: 0;
+}
+
+
+.content h1 {
+
+    font-size: clamp(32px, 4vw, 55px);
+
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+
+    color: #222;
+}
+
+
+.content span {
+
+    display: block;
+
+    color: #1599e8;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+}
+
+
+.content p {
+
+    max-width: 70ch;
+
+    line-height: 1.7;
+
+    color: #555;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   IMAGE SLIDER
+========================= */
+
+.slider {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    margin: 35px 0;
+
+    border-radius: 18px;
+
+    padding: 15px 0;
+
+    background: #f8fcff;
+
+    box-shadow:
+        inset 0 0 20px rgba(0, 0, 0, 0.04);
+}
+
+
+.img-rotat {
+
+    display: flex;
+
+    width: max-content;
+
+    gap: 18px;
+
+    align-items: center;
+
+    animation: moveImages 20s linear infinite;
+}
+
+
+/* Pause animation when mouse is over slider */
+
+.slider:hover .img-rotat {
+
+    animation-play-state: paused;
+}
+
+
+.img-rotat img {
+
+    width: 150px;
+
+    height: 190px;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+
+    border: 2px solid #34b4ec;
+
+    border-radius: 5px 25px 5px 25px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.img-rotat img:hover {
+
+    transform: translateY(-8px) scale(1.03);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Infinite animation */
+
+@keyframes moveImages {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 9px));
+    }
+
+}
+
+
+/* =========================
+   HELP CONTAINER
+========================= */
+
+.help-container {
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    border: 1px solid #e8e8e8;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.help-container:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+.help-container h2 {
+
+    margin-bottom: 18px;
+
+    font-size: 25px;
+}
+
+
+.help-cards {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+/* =========================
+   SMALL CARDS
+========================= */
+
+.small-sec {
+
+    padding: 12px 18px;
+
+    color: #1599e8;
+
+    background: #f7fcff;
+
+    border: 1px solid #ccecff;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.small-sec:hover {
+
+    transform: translateY(-5px);
+
+    background: #34b4ec;
+
+    color: white;
+
+    box-shadow:
+        0 10px 20px rgba(52, 180, 236, 0.25);
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    
+}
+
+
+#form {
+
+    width: 100%;
+
+    min-height: 720px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: white;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    body {
+        padding: 25px;
+    }
+
+    .grid-box {
+
+        grid-template-columns: 1fr;
+
+        padding: 30px;
+
+        gap: 30px;
+    }
+
+    .form {
+
+        width: 100%;
+    }
+
+    #form {
+
+        width: 100%;
+
+        min-height: 700px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 12px;
+
+        background:
+            linear-gradient(
+                160deg,
+                #ffffff 0%,
+                #ffffff 55%,
+                #dff4ff 100%
+            );
+    }
+
+
+    .grid-box {
+
+        padding: 20px 15px;
+
+        border-radius: 18px;
+
+        gap: 25px;
+    }
+
+
+    .content h1 {
+
+        font-size: 34px;
+    }
+
+
+    .content span {
+
+        font-size: 16px;
+    }
+
+
+    .content p {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    /* Slider becomes full width */
+
+    .slider {
+
+        width: 100%;
+
+        margin: 25px 0;
+
+        padding: 12px 0;
+    }
+
+
+    .img-rotat {
+
+        gap: 12px;
+
+        animation-duration: 16s;
+    }
+
+
+    .img-rotat img {
+
+        width: 115px;
+
+        height: 155px;
+    }
+
+
+    /* Help cards */
+
+    .help-container {
+
+        padding: 20px;
+
+        margin-top: 20px;
+    }
+
+
+    .help-container h2 {
+
+        font-size: 21px;
+    }
+
+
+    .small-sec {
+
+        font-size: 14px;
+
+        padding: 10px 14px;
+    }
+
+
+    /* Google form */
+
+    #form {
+
+        width: 100%;
+
+        min-height: 700px;
+
+        border-radius: 15px;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 400px) {
+
+    .grid-box {
+
+        padding: 15px 10px;
+    }
+
+
+    .content h1 {
+
+        font-size: 29px;
+    }
+
+
+    .img-rotat img {
+
+        width: 100px;
+
+        height: 135px;
+    }
+
+
+    .help-container {
+
+        padding: 15px;
+    }
+
+}
+
+
