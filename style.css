@@ -326,6 +326,425 @@ body {
 }
 
 
+
+
+```css
+/* =========================
+   APPLICATION FORM
+========================= */
+
+.application-form {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    padding: 28px;
+
+    background: white;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================
+   FORM HEADING
+========================= */
+
+.form-heading {
+
+    text-align: center;
+
+    margin-bottom: 22px;
+}
+
+
+.form-heading span {
+
+    color: #34b4ec;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.form-heading h1 {
+
+    margin: 6px 0;
+
+    font-size: 28px;
+
+    color: #222;
+}
+
+
+.form-heading p {
+
+    color: #666;
+
+    line-height: 1.4;
+
+    font-size: 14px;
+
+    margin: 0 auto;
+
+    max-width: 500px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 16px;
+
+    row-gap: 0;
+}
+
+
+/* =========================
+   INPUT GROUP
+========================= */
+
+.input-group {
+
+    margin-bottom: 14px;
+}
+
+
+/* Full width fields */
+
+.input-group:nth-last-of-type(2),
+.input-group:nth-last-of-type(1) {
+
+    grid-column: 1 / -1;
+}
+
+
+.input-group > label {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #333;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+
+    width: 100%;
+
+    padding: 10px 12px;
+
+    border: 1px solid #d8e3e8;
+
+    border-radius: 10px;
+
+    background: #fafcff;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+
+.input-group textarea {
+
+    min-height: 85px;
+
+    resize: vertical;
+}
+
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+
+    border-color: #34b4ec;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px rgba(52, 180, 236, 0.10);
+}
+
+
+/* =========================
+   CHECKBOX
+========================= */
+
+.checkbox-group {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+
+.checkbox-group label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 7px 10px;
+
+    border: 1px solid #dce8ee;
+
+    border-radius: 18px;
+
+    background: #f8fcff;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    transition: 0.3s ease;
+}
+
+
+.checkbox-group label:hover {
+
+    border-color: #34b4ec;
+
+    background: #eefaff;
+}
+
+
+.checkbox-group input {
+
+    width: auto;
+
+    accent-color: #34b4ec;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 3px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #34b4ec;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+button:hover {
+
+    background: #209ed5;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(52, 180, 236, 0.25);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .grid-box {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .application-form {
+
+        max-width: 750px;
+
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .application-form {
+
+        padding: 22px 16px;
+
+        border-radius: 18px;
+
+    }
+
+
+    .form-heading {
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .form-heading h1 {
+
+        font-size: 25px;
+
+    }
+
+
+    form {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .input-group:nth-last-of-type(2),
+    .input-group:nth-last-of-type(1) {
+
+        grid-column: auto;
+
+    }
+
+
+    .input-group {
+
+        margin-bottom: 14px;
+
+    }
+
+
+    .checkbox-group {
+
+        flex-direction: column;
+
+    }
+
+
+    .checkbox-group label {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .application-form {
+
+        padding: 18px 13px;
+
+    }
+
+
+    .form-heading h1 {
+
+        font-size: 23px;
+
+    }
+
+}
+```
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 15px;
+
+    }
+
+
+    .application-form {
+
+        padding: 25px 18px;
+
+        border-radius: 18px;
+    }
+
+
+    .form-heading h1 {
+
+        font-size: 28px;
+    }
+
+
+    .checkbox-group {
+
+        flex-direction: column;
+    }
+
+
+    .checkbox-group label {
+
+        width: 100%;
+    }
+
+}
+```
+
 /* =========================
    TABLET
 ========================= */
