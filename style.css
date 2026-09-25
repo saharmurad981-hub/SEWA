@@ -1,6 +1,6 @@
-/* =========================================
+/* =====================================================
    RESET
-========================================= */
+===================================================== */
 
 * {
     margin: 0;
@@ -9,9 +9,9 @@
 }
 
 
-/* =========================================
+/* =====================================================
    BODY
-========================================= */
+===================================================== */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -24,9 +24,9 @@ body {
 }
 
 
-/* =========================================
+/* =====================================================
    MAIN SECTION
-========================================= */
+===================================================== */
 
 .involvement-section {
 
@@ -34,13 +34,11 @@ body {
 
     max-width: 1250px;
 
-    margin: 0 auto 70px;
+    margin: 0 auto 80px;
 
     display: grid;
 
     grid-template-columns: 1fr 1fr;
-
-    gap: 0;
 
     overflow: hidden;
 
@@ -53,19 +51,19 @@ body {
 }
 
 
-/* =========================================
+/* =====================================================
    FORM CARD
-========================================= */
+===================================================== */
 
 .form-card {
 
     background: #ffffff;
 
-    padding: 45px 50px;
+    padding: 50px;
 
     display: flex;
 
-    align-items: center;
+    align-items: flex-start;
 }
 
 
@@ -75,36 +73,70 @@ body {
 }
 
 
-/* =========================================
-   FORM GROUP
-========================================= */
+/* =====================================================
+   FORM TITLE
+===================================================== */
 
-.form-group {
+.form-title {
 
-    margin-bottom: 18px;
+    font-size: 30px;
+
+    color: #222;
+
+    margin-bottom: 8px;
 }
 
 
-.form-group label {
+.form-intro {
+
+    font-size: 14px;
+
+    color: #777;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   FORM GROUP
+===================================================== */
+
+.form-group {
+
+    margin-bottom: 22px;
+}
+
+
+.form-group > label {
 
     display: block;
 
-    margin-bottom: 7px;
+    margin-bottom: 9px;
 
     font-size: 13px;
 
     font-weight: 600;
 
+    line-height: 1.5;
+
     color: #333;
 }
 
 
-.form-group input,
+/* =====================================================
+   INPUTS
+===================================================== */
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
 .form-group textarea {
 
     width: 100%;
 
-    padding: 12px 14px;
+    padding: 13px 15px;
 
     border: 1px solid #dce4e8;
 
@@ -118,19 +150,9 @@ body {
 
     font-size: 13px;
 
+    color: #222;
+
     transition: 0.3s ease;
-}
-
-
-.form-group input:focus,
-.form-group textarea:focus {
-
-    border-color: #168fc8;
-
-    background: #ffffff;
-
-    box-shadow:
-        0 0 0 3px rgba(22, 143, 200, 0.10);
 }
 
 
@@ -139,24 +161,95 @@ body {
     resize: vertical;
 
     min-height: 100px;
+
+    line-height: 1.6;
 }
 
 
-/* =========================================
-   BUTTON
-========================================= */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color: #a3a9ad;
+}
+
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group textarea:focus {
+
+    border-color: #34B4EC;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(52, 180, 236, 0.12);
+}
+
+
+/* =====================================================
+   RADIO & CHECKBOX OPTIONS
+===================================================== */
+
+.options {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    padding: 5px 0;
+}
+
+
+.option {
+
+    display: flex !important;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin: 0 !important;
+
+    font-size: 13px !important;
+
+    font-weight: 400 !important;
+
+    color: #555 !important;
+
+    cursor: pointer;
+}
+
+
+.option input {
+
+    width: 16px;
+
+    height: 16px;
+
+    accent-color: #34B4EC;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   SUBMIT BUTTON
+===================================================== */
 
 .form-card button {
 
     width: 100%;
 
-    padding: 13px;
+    padding: 14px 20px;
 
     border: none;
 
     border-radius: 8px;
 
-    background: #168fc8;
+    background: #34B4EC;
 
     color: #ffffff;
 
@@ -167,23 +260,25 @@ body {
     cursor: pointer;
 
     transition: 0.3s ease;
+
+    margin-top: 5px;
 }
 
 
 .form-card button:hover {
 
-    background: #087db5;
+    background: #159fd8;
 
     transform: translateY(-2px);
 
     box-shadow:
-        0 8px 20px rgba(22, 143, 200, 0.25);
+        0 8px 20px rgba(52, 180, 236, 0.25);
 }
 
 
-/* =========================================
+/* =====================================================
    INFORMATION CARD
-========================================= */
+===================================================== */
 
 .info-card {
 
@@ -191,11 +286,11 @@ body {
 
     overflow: hidden;
 
-    min-height: 650px;
+    min-height: 700px;
 
     padding: 65px 55px;
 
-    background: #168fc8;
+    background: #34B4EC;
 
     color: #ffffff;
 
@@ -209,7 +304,9 @@ body {
 }
 
 
-/* Decorative circle */
+/* =====================================================
+   DECORATIVE CIRCLE
+===================================================== */
 
 .info-card::after {
 
@@ -217,25 +314,49 @@ body {
 
     position: absolute;
 
-    width: 400px;
+    width: 420px;
 
-    height: 400px;
+    height: 420px;
 
-    right: -220px;
+    right: -230px;
 
-    bottom: -180px;
+    bottom: -190px;
 
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 
     border-radius: 50%;
 }
 
 
-/* =========================================
+.info-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    right: -140px;
+
+    top: -120px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 50%;
+}
+
+
+/* =====================================================
    INFORMATION TEXT
-========================================= */
+===================================================== */
 
 .info-label {
+
+    position: relative;
+
+    z-index: 2;
 
     font-size: 12px;
 
@@ -243,7 +364,7 @@ body {
 
     letter-spacing: 2px;
 
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 
@@ -275,15 +396,15 @@ body {
 
     line-height: 1.7;
 
-    color: rgba(255, 255, 255, 0.92);
+    color: rgba(255, 255, 255, 0.94);
 
     margin-bottom: 14px;
 }
 
 
-/* =========================================
+/* =====================================================
    BENEFITS
-========================================= */
+===================================================== */
 
 .benefit {
 
@@ -303,11 +424,11 @@ body {
 
 .check {
 
-    width: 32px;
+    width: 34px;
 
-    height: 32px;
+    height: 34px;
 
-    min-width: 32px;
+    min-width: 34px;
 
     display: flex;
 
@@ -320,6 +441,8 @@ body {
     background: rgba(255, 255, 255, 0.16);
 
     font-weight: bold;
+
+    font-size: 15px;
 }
 
 
@@ -339,13 +462,13 @@ body {
 
     font-size: 11px;
 
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.78);
 }
 
 
-/* =========================================
+/* =====================================================
    TABLET
-========================================= */
+===================================================== */
 
 @media (max-width: 950px) {
 
@@ -380,9 +503,9 @@ body {
 }
 
 
-/* =========================================
+/* =====================================================
    MOBILE
-========================================= */
+===================================================== */
 
 @media (max-width: 600px) {
 
@@ -396,19 +519,33 @@ body {
 
         border-radius: 18px;
 
-        margin-bottom: 35px;
+        margin-bottom: 40px;
     }
 
 
     .form-card {
 
-        padding: 28px 20px;
+        padding: 30px 20px;
+    }
+
+
+    .form-title {
+
+        font-size: 25px;
+    }
+
+
+    .form-intro {
+
+        font-size: 13px;
+
+        margin-bottom: 25px;
     }
 
 
     .info-card {
 
-        padding: 40px 25px;
+        padding: 42px 25px;
 
         border-radius: 0 0 18px 18px;
     }
@@ -425,18 +562,30 @@ body {
         font-size: 13px;
     }
 
+
+    .option {
+
+        font-size: 12px !important;
+    }
+
 }
 
 
-/* =========================================
+/* =====================================================
    SMALL MOBILE
-========================================= */
+===================================================== */
 
 @media (max-width: 400px) {
 
+    body {
+
+        padding: 8px;
+    }
+
+
     .form-card {
 
-        padding: 23px 16px;
+        padding: 25px 16px;
     }
 
 
@@ -449,6 +598,17 @@ body {
     .info-card h1 {
 
         font-size: 31px;
+    }
+
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group textarea {
+
+        font-size: 12px;
+
+        padding: 11px 12px;
     }
 
 }
