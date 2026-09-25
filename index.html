@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Get Involved | SAWE</title>
+    <title>SAWE | Get Involved</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,7 +19,7 @@
 
     <section class="involvement-section">
 
-        <!-- LEFT: FORM -->
+        <!-- FORM -->
 
         <div class="form-card">
 
@@ -137,13 +137,13 @@
                     <input
                         type="text"
                         name="Occupation or Student Status"
-                        placeholder="e.g. Student, Engineer, Teacher..."
+                        placeholder="e.g. Student, Engineer, Teacher"
                     >
 
                 </div>
 
 
-                <!-- Academic Qualifications -->
+                <!-- Academic Qualification -->
 
                 <div class="form-group">
 
@@ -151,29 +151,29 @@
                         Academic Qualifications
                     </label>
 
-                    <div class="options">
+                    <select name="Academic Qualification">
 
-                        <label class="option">
-                            <input type="radio" name="Academic Qualification" value="Bachelor">
+                        <option value="">
+                            Select qualification
+                        </option>
+
+                        <option value="Bachelor">
                             Bachelor
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Academic Qualification" value="Master">
+                        <option value="Master">
                             Master
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Academic Qualification" value="Doctorate">
+                        <option value="Doctorate">
                             Doctorate
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Academic Qualification" value="Other">
+                        <option value="Other">
                             Other
-                        </label>
+                        </option>
 
-                    </div>
+                    </select>
 
                 </div>
 
@@ -186,51 +186,84 @@
                         Engineering Specialization or Field of Interest
                     </label>
 
-                    <input
-                        type="text"
-                        name="Engineering Specialization"
-                        placeholder="e.g. Civil, Electrical, IT..."
-                    >
+                    <select name="Engineering Specialization">
+
+                        <option value="">
+                            Select your field
+                        </option>
+
+                        <option value="Civil Engineering">
+                            Civil Engineering
+                        </option>
+
+                        <option value="Architecture">
+                            Architecture
+                        </option>
+
+                        <option value="Electrical Engineering">
+                            Electrical Engineering
+                        </option>
+
+                        <option value="Mechanical Engineering">
+                            Mechanical Engineering
+                        </option>
+
+                        <option value="IT / Data / AI">
+                            IT / Data / AI
+                        </option>
+
+                        <option value="Urban Planning">
+                            Urban Planning
+                        </option>
+
+                        <option value="Environmental / Climate">
+                            Environmental / Climate
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
 
                 </div>
 
 
-                <!-- Volunteer Roles -->
+                <!-- Volunteer Role -->
 
                 <div class="form-group">
 
                     <label>
-                        Volunteer Roles Interested In
+                        Volunteer Role Interested In
                     </label>
 
-                    <div class="options">
+                    <select name="Volunteer Role">
 
-                        <label class="option">
-                            <input type="checkbox" name="Volunteer Roles" value="Teaching">
+                        <option value="">
+                            Select a volunteer role
+                        </option>
+
+                        <option value="Teaching">
                             Teaching
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Volunteer Roles" value="Graphic Design">
+                        <option value="Graphic Design">
                             Graphic Design
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Volunteer Roles" value="Event Planning">
+                        <option value="Event Planning">
                             Event Planning
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Volunteer Roles" value="Mentorship">
+                        <option value="Mentorship">
                             Mentorship
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Volunteer Roles" value="Other">
+                        <option value="Other">
                             Other
-                        </label>
+                        </option>
 
-                    </div>
+                    </select>
 
                 </div>
 
@@ -243,29 +276,29 @@
                         Preferred Time Commitment
                     </label>
 
-                    <div class="options">
+                    <select name="Time Commitment">
 
-                        <label class="option">
-                            <input type="radio" name="Time Commitment" value="One-time event">
+                        <option value="">
+                            Select time commitment
+                        </option>
+
+                        <option value="One-time event">
                             One-time event
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Time Commitment" value="Short-term project">
+                        <option value="Short-term project">
                             Short-term project
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Time Commitment" value="Long-term commitment">
+                        <option value="Long-term commitment">
                             Long-term commitment
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Time Commitment" value="Flexible">
+                        <option value="Flexible">
                             Flexible
-                        </label>
+                        </option>
 
-                    </div>
+                    </select>
 
                 </div>
 
@@ -275,7 +308,7 @@
                 <div class="form-group">
 
                     <label>
-                        Specify the days and hours you are available
+                        Days and Hours Available
                     </label>
 
                     <textarea
@@ -292,7 +325,7 @@
                 <div class="form-group">
 
                     <label>
-                        What are your expectations from volunteering with the society?
+                        What are your expectations from volunteering?
                     </label>
 
                     <textarea
@@ -309,13 +342,13 @@
                 <div class="form-group">
 
                     <label>
-                        Areas of interest or specific projects you would like to contribute to
+                        Areas of Interest or Projects
                     </label>
 
                     <textarea
                         name="Projects of Interest"
                         rows="4"
-                        placeholder="Tell us about the projects you are interested in..."
+                        placeholder="Tell us about projects you would like to contribute to..."
                     ></textarea>
 
                 </div>
@@ -331,7 +364,7 @@
 
                     <textarea
                         name="Suggestions or Comments"
-                        rows="4"
+                        rows="3"
                         placeholder="Write your suggestions or comments..."
                     ></textarea>
 
@@ -347,7 +380,7 @@
         </div>
 
 
-        <!-- RIGHT: INFORMATION -->
+        <!-- INFORMATION -->
 
         <div class="info-card">
 
@@ -381,9 +414,7 @@
                 <span class="check">✓</span>
 
                 <div>
-                    <strong>
-                        Share Your Skills
-                    </strong>
+                    <strong>Share Your Skills</strong>
 
                     <small>
                         Contribute your knowledge and experience.
@@ -398,12 +429,10 @@
                 <span class="check">✓</span>
 
                 <div>
-                    <strong>
-                        Support Our Initiatives
-                    </strong>
+                    <strong>Support Our Initiatives</strong>
 
                     <small>
-                        Help with training, events, mentoring and education.
+                        Help with training, events and mentoring.
                     </small>
                 </div>
 
@@ -415,12 +444,10 @@
                 <span class="check">✓</span>
 
                 <div>
-                    <strong>
-                        Create Positive Impact
-                    </strong>
+                    <strong>Create Positive Impact</strong>
 
                     <small>
-                        Help build opportunities for women in engineering.
+                        Help create opportunities for women in engineering.
                     </small>
                 </div>
 
@@ -438,7 +465,7 @@
 
     <section class="involvement-section">
 
-        <!-- LEFT: FORM -->
+        <!-- FORM -->
 
         <div class="form-card">
 
@@ -553,34 +580,33 @@
                         Highest Level of Education
                     </label>
 
-                    <div class="options">
+                    <select name="Highest Education">
 
-                        <label class="option">
-                            <input type="radio" name="Education" value="Undergraduate">
+                        <option value="">
+                            Select education level
+                        </option>
+
+                        <option value="Undergraduate">
                             Undergraduate
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Education" value="Bachelor's">
+                        <option value="Bachelor's">
                             Bachelor's
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Education" value="Master's">
+                        <option value="Master's">
                             Master's
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Education" value="PhD">
+                        <option value="PhD">
                             PhD
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Education" value="Other">
+                        <option value="Other">
                             Other
-                        </label>
+                        </option>
 
-                    </div>
+                    </select>
 
                 </div>
 
@@ -627,49 +653,45 @@
                         Engineering Specialization or Field
                     </label>
 
-                    <div class="options">
+                    <select name="Engineering Field">
 
-                        <label class="option">
-                            <input type="checkbox" name="Engineering Field" value="Civil">
+                        <option value="">
+                            Select your field
+                        </option>
+
+                        <option value="Civil">
                             Civil
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Engineering Field" value="Architecture">
+                        <option value="Architecture">
                             Architecture
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Engineering Field" value="Electrical">
+                        <option value="Electrical">
                             Electrical
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Engineering Field" value="Mechanical">
+                        <option value="Mechanical">
                             Mechanical
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Engineering Field" value="IT / Data / AI">
+                        <option value="IT / Data / AI">
                             IT / Data / AI
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Engineering Field" value="Urban Planning">
+                        <option value="Urban Planning">
                             Urban Planning
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Engineering Field" value="Environmental / Climate">
+                        <option value="Environmental / Climate">
                             Environmental / Climate
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Engineering Field" value="Other">
+                        <option value="Other">
                             Other
-                        </label>
+                        </option>
 
-                    </div>
+                    </select>
 
                 </div>
 
@@ -682,34 +704,33 @@
                         Career Stage
                     </label>
 
-                    <div class="options">
+                    <select name="Career Stage">
 
-                        <label class="option">
-                            <input type="radio" name="Career Stage" value="Student">
+                        <option value="">
+                            Select career stage
+                        </option>
+
+                        <option value="Student">
                             Student
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Career Stage" value="Fresh graduate">
+                        <option value="Fresh graduate">
                             Fresh graduate
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Career Stage" value="Early career (0-3 years)">
+                        <option value="Early career (0-3 years)">
                             Early career (0–3 years)
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Career Stage" value="Mid-level (3-7 years)">
+                        <option value="Mid-level (3-7 years)">
                             Mid-level (3–7 years)
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="radio" name="Career Stage" value="Career break">
+                        <option value="Career break">
                             Career break
-                        </label>
+                        </option>
 
-                    </div>
+                    </select>
 
                 </div>
 
@@ -719,57 +740,56 @@
                 <div class="form-group">
 
                     <label>
-                        What do you want support with?
+                        What Do You Want Support With?
                     </label>
 
-                    <div class="options">
+                    <select
+                        name="Support Needed"
+                        multiple
+                    >
 
-                        <label class="option">
-                            <input type="checkbox" name="Support Needed" value="CV / Resume writing">
+                        <option value="CV / Resume writing">
                             CV / Resume writing
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Support Needed" value="Scholarships">
+                        <option value="Scholarships">
                             Scholarships
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Support Needed" value="Career mentoring">
+                        <option value="Career mentoring">
                             Career mentoring
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Support Needed" value="Technical training">
+                        <option value="Technical training">
                             Technical training
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Support Needed" value="Research & Publishing">
+                        <option value="Research & Publishing">
                             Research & Publishing
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Support Needed" value="Leadership & Soft Skills">
+                        <option value="Leadership & Soft Skills">
                             Leadership & Soft Skills
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Support Needed" value="Networking">
+                        <option value="Networking">
                             Networking
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Support Needed" value="Other">
+                        <option value="Other">
                             Other
-                        </label>
+                        </option>
 
-                    </div>
+                    </select>
+
+                    <small class="select-hint">
+                        Hold Ctrl or Command to select multiple options.
+                    </small>
 
                 </div>
 
 
-                <!-- Interested in -->
+                <!-- Interested In -->
 
                 <div class="form-group">
 
@@ -777,24 +797,28 @@
                         Interested in Attending
                     </label>
 
-                    <div class="options">
+                    <select
+                        name="Interested In"
+                        multiple
+                    >
 
-                        <label class="option">
-                            <input type="checkbox" name="Interested In" value="Online sessions">
+                        <option value="Online sessions">
                             Online sessions
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Interested In" value="In-person events">
+                        <option value="In-person events">
                             In-person events
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input type="checkbox" name="Interested In" value="Volunteering with SAWE">
+                        <option value="Volunteering with SAWE">
                             Volunteering with SAWE
-                        </label>
+                        </option>
 
-                    </div>
+                    </select>
+
+                    <small class="select-hint">
+                        You can select more than one option.
+                    </small>
 
                 </div>
 
@@ -816,7 +840,7 @@
                 </div>
 
 
-                <!-- Comments -->
+                <!-- Additional Comments -->
 
                 <div class="form-group">
 
@@ -826,7 +850,7 @@
 
                     <textarea
                         name="Additional Comments"
-                        rows="4"
+                        rows="3"
                         placeholder="Write your comments..."
                     ></textarea>
 
@@ -842,7 +866,7 @@
         </div>
 
 
-        <!-- RIGHT: INFORMATION -->
+        <!-- INFORMATION -->
 
         <div class="info-card">
 
@@ -865,9 +889,8 @@
             </p>
 
             <p>
-                Membership gives you opportunities to connect with
-                professionals, discover learning resources, and take
-                part in community activities.
+                Connect with professionals, discover learning resources,
+                and participate in programs and community activities.
             </p>
 
 
@@ -876,9 +899,7 @@
                 <span class="check">✓</span>
 
                 <div>
-                    <strong>
-                        Build Connections
-                    </strong>
+                    <strong>Build Connections</strong>
 
                     <small>
                         Connect with engineers and professionals.
@@ -893,12 +914,10 @@
                 <span class="check">✓</span>
 
                 <div>
-                    <strong>
-                        Learn & Grow
-                    </strong>
+                    <strong>Learn & Grow</strong>
 
                     <small>
-                        Access learning and development opportunities.
+                        Discover learning and development opportunities.
                     </small>
                 </div>
 
@@ -910,9 +929,7 @@
                 <span class="check">✓</span>
 
                 <div>
-                    <strong>
-                        Discover Opportunities
-                    </strong>
+                    <strong>Discover Opportunities</strong>
 
                     <small>
                         Explore programs, events and activities.
@@ -933,7 +950,7 @@
 
     <section class="involvement-section">
 
-        <!-- LEFT: FORM -->
+        <!-- FORM -->
 
         <div class="form-card">
 
@@ -1031,41 +1048,30 @@
                         Type of Sponsorship
                     </label>
 
-                    <div class="options">
+                    <select name="Sponsorship Type">
 
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="Sponsorship Type"
-                                value="Financial Sponsorship"
-                            >
+                        <option value="">
+                            Select sponsorship type
+                        </option>
+
+                        <option value="Financial Sponsorship">
                             Financial Sponsorship
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="Sponsorship Type"
-                                value="In-kind Sponsorship"
-                            >
+                        <option value="In-kind Sponsorship">
                             In-kind Sponsorship
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="Sponsorship Type"
-                                value="Other"
-                            >
+                        <option value="Other">
                             Other
-                        </label>
+                        </option>
 
-                    </div>
+                    </select>
 
                 </div>
 
 
-                <!-- Sponsorship Amount -->
+                <!-- Amount -->
 
                 <div class="form-group">
 
@@ -1082,7 +1088,7 @@
                 </div>
 
 
-                <!-- Payment Method -->
+                <!-- Payment -->
 
                 <div class="form-group">
 
@@ -1090,63 +1096,37 @@
                         Payment Method
                     </label>
 
-                    <div class="options">
+                    <select name="Payment Method">
 
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="Payment Method"
-                                value="Bank Transfer"
-                            >
+                        <option value="">
+                            Select payment method
+                        </option>
+
+                        <option value="Bank Transfer">
                             Bank Transfer
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="Payment Method"
-                                value="PayPal"
-                            >
+                        <option value="PayPal">
                             PayPal
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="Payment Method"
-                                value="Credit Card"
-                            >
+                        <option value="Credit Card">
                             Credit Card
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="Payment Method"
-                                value="Mobile Money"
-                            >
+                        <option value="Mobile Money">
                             Mobile Money
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="Payment Method"
-                                value="Check"
-                            >
+                        <option value="Check">
                             Check
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="Payment Method"
-                                value="In-kind Donation"
-                            >
+                        <option value="In-kind Donation">
                             In-kind Donation
-                        </label>
+                        </option>
 
-                    </div>
+                    </select>
 
                 </div>
 
@@ -1159,45 +1139,29 @@
                         Duration of Sponsorship
                     </label>
 
-                    <div class="options">
+                    <select name="Sponsorship Duration">
 
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="Sponsorship Duration"
-                                value="One-time"
-                            >
+                        <option value="">
+                            Select duration
+                        </option>
+
+                        <option value="One-time">
                             One-time
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="Sponsorship Duration"
-                                value="Monthly"
-                            >
+                        <option value="Monthly">
                             Monthly
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="Sponsorship Duration"
-                                value="Quarterly"
-                            >
+                        <option value="Quarterly">
                             Quarterly
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="Sponsorship Duration"
-                                value="Annual"
-                            >
+                        <option value="Annual">
                             Annual
-                        </label>
+                        </option>
 
-                    </div>
+                    </select>
 
                 </div>
 
@@ -1227,45 +1191,32 @@
                         Benefits of Sponsorship
                     </label>
 
-                    <div class="options">
+                    <select
+                        name="Sponsorship Benefits"
+                        multiple
+                    >
 
-                        <label class="option">
-                            <input
-                                type="checkbox"
-                                name="Sponsorship Benefits"
-                                value="Logo placement"
-                            >
+                        <option value="Logo placement">
                             Logo placement on promotional materials
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="checkbox"
-                                name="Sponsorship Benefits"
-                                value="Press releases"
-                            >
+                        <option value="Press releases">
                             Mention in press releases
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="checkbox"
-                                name="Sponsorship Benefits"
-                                value="Social media promotion"
-                            >
+                        <option value="Social media promotion">
                             Social media promotion
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="checkbox"
-                                name="Sponsorship Benefits"
-                                value="Other"
-                            >
+                        <option value="Other">
                             Other
-                        </label>
+                        </option>
 
-                    </div>
+                    </select>
+
+                    <small class="select-hint">
+                        You can select more than one option.
+                    </small>
 
                 </div>
 
@@ -1278,45 +1229,32 @@
                         Networking Opportunities
                     </label>
 
-                    <div class="options">
+                    <select
+                        name="Networking Opportunities"
+                        multiple
+                    >
 
-                        <label class="option">
-                            <input
-                                type="checkbox"
-                                name="Networking Opportunities"
-                                value="Participation in events and workshops"
-                            >
+                        <option value="Participation in events/workshops">
                             Participation in events/workshops
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="checkbox"
-                                name="Networking Opportunities"
-                                value="Industry professionals"
-                            >
-                            Access to industry professionals
-                        </label>
+                        <option value="Industry professionals">
+                            Access to network of industry professionals
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="checkbox"
-                                name="Networking Opportunities"
-                                value="Project collaboration"
-                            >
+                        <option value="Project collaboration">
                             Opportunity to collaborate on projects
-                        </label>
+                        </option>
 
-                        <label class="option">
-                            <input
-                                type="checkbox"
-                                name="Networking Opportunities"
-                                value="Other"
-                            >
+                        <option value="Other">
                             Other
-                        </label>
+                        </option>
 
-                    </div>
+                    </select>
+
+                    <small class="select-hint">
+                        You can select more than one option.
+                    </small>
 
                 </div>
 
@@ -1331,7 +1269,7 @@
 
                     <textarea
                         name="Comments or Questions"
-                        rows="4"
+                        rows="3"
                         placeholder="Write your comments or questions..."
                     ></textarea>
 
@@ -1347,7 +1285,7 @@
         </div>
 
 
-        <!-- RIGHT: INFORMATION -->
+        <!-- INFORMATION -->
 
         <div class="info-card">
 
@@ -1380,9 +1318,7 @@
                 <span class="check">✓</span>
 
                 <div>
-                    <strong>
-                        Support Education
-                    </strong>
+                    <strong>Support Education</strong>
 
                     <small>
                         Help provide valuable learning opportunities.
@@ -1397,9 +1333,7 @@
                 <span class="check">✓</span>
 
                 <div>
-                    <strong>
-                        Empower Future Engineers
-                    </strong>
+                    <strong>Empower Future Engineers</strong>
 
                     <small>
                         Support women building careers in engineering.
@@ -1414,9 +1348,7 @@
                 <span class="check">✓</span>
 
                 <div>
-                    <strong>
-                        Build Strong Partnerships
-                    </strong>
+                    <strong>Build Strong Partnerships</strong>
 
                     <small>
                         Collaborate on meaningful programs and projects.

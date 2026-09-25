@@ -68,7 +68,6 @@ body {
 
 
 .form-card form {
-
     width: 100%;
 }
 
@@ -104,7 +103,6 @@ body {
 ===================================================== */
 
 .form-group {
-
     margin-bottom: 22px;
 }
 
@@ -126,13 +124,14 @@ body {
 
 
 /* =====================================================
-   INPUTS
+   INPUT + TEXTAREA + SELECT
 ===================================================== */
 
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="tel"],
-.form-group textarea {
+.form-group textarea,
+.form-group select {
 
     width: 100%;
 
@@ -150,21 +149,73 @@ body {
 
     font-size: 13px;
 
-    color: #222;
+    color: #333;
 
     transition: 0.3s ease;
 }
 
 
+/* =====================================================
+   TEXTAREA
+===================================================== */
+
 .form-group textarea {
 
     resize: vertical;
 
-    min-height: 100px;
+    min-height: 95px;
 
     line-height: 1.6;
 }
 
+
+/* =====================================================
+   SELECT
+===================================================== */
+
+.form-group select {
+
+    cursor: pointer;
+
+    appearance: auto;
+
+    min-height: 46px;
+}
+
+
+/* =====================================================
+   MULTIPLE SELECT
+===================================================== */
+
+.form-group select[multiple] {
+
+    min-height: 115px;
+
+    padding: 8px;
+
+    cursor: pointer;
+}
+
+
+.form-group select[multiple] option {
+
+    padding: 8px 10px;
+
+    border-radius: 5px;
+}
+
+
+.form-group select[multiple] option:checked {
+
+    background: #34B4EC;
+
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   PLACEHOLDER
+===================================================== */
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
@@ -173,10 +224,15 @@ body {
 }
 
 
+/* =====================================================
+   FOCUS
+===================================================== */
+
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus,
 .form-group input[type="tel"]:focus,
-.form-group textarea:focus {
+.form-group textarea:focus,
+.form-group select:focus {
 
     border-color: #34B4EC;
 
@@ -188,50 +244,20 @@ body {
 
 
 /* =====================================================
-   RADIO & CHECKBOX OPTIONS
+   SELECT HINT
 ===================================================== */
 
-.options {
+.select-hint {
 
-    display: flex;
+    display: block;
 
-    flex-direction: column;
+    margin-top: 6px;
 
-    gap: 10px;
+    font-size: 11px;
 
-    padding: 5px 0;
-}
+    color: #999;
 
-
-.option {
-
-    display: flex !important;
-
-    align-items: center;
-
-    gap: 9px;
-
-    margin: 0 !important;
-
-    font-size: 13px !important;
-
-    font-weight: 400 !important;
-
-    color: #555 !important;
-
-    cursor: pointer;
-}
-
-
-.option input {
-
-    width: 16px;
-
-    height: 16px;
-
-    accent-color: #34B4EC;
-
-    cursor: pointer;
+    line-height: 1.5;
 }
 
 
@@ -305,7 +331,7 @@ body {
 
 
 /* =====================================================
-   DECORATIVE CIRCLE
+   DECORATIVE CIRCLES
 ===================================================== */
 
 .info-card::after {
@@ -473,7 +499,6 @@ body {
 @media (max-width: 950px) {
 
     body {
-
         padding: 25px;
     }
 
@@ -481,7 +506,6 @@ body {
     .involvement-section {
 
         grid-template-columns: 1fr;
-
     }
 
 
@@ -510,7 +534,6 @@ body {
 @media (max-width: 600px) {
 
     body {
-
         padding: 12px;
     }
 
@@ -563,9 +586,9 @@ body {
     }
 
 
-    .option {
+    .form-group select[multiple] {
 
-        font-size: 12px !important;
+        min-height: 105px;
     }
 
 }
@@ -578,7 +601,6 @@ body {
 @media (max-width: 400px) {
 
     body {
-
         padding: 8px;
     }
 
@@ -604,7 +626,8 @@ body {
     .form-group input[type="text"],
     .form-group input[type="email"],
     .form-group input[type="tel"],
-    .form-group textarea {
+    .form-group textarea,
+    .form-group select {
 
         font-size: 12px;
 
