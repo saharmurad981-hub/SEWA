@@ -1,6 +1,6 @@
-/* =====================================================
+/* =========================================================
    RESET
-===================================================== */
+========================================================= */
 
 * {
     margin: 0;
@@ -9,29 +9,25 @@
 }
 
 
-/* =====================================================
+/* =========================================================
    BODY
-===================================================== */
+========================================================= */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-
     background: #ffffff;
-
     color: #222;
-
     padding: 40px;
 }
 
 
-/* =====================================================
+/* =========================================================
    MAIN SECTION
-===================================================== */
+========================================================= */
 
 .involvement-section {
 
     width: 100%;
-
     max-width: 1250px;
 
     margin: 0 auto 80px;
@@ -40,20 +36,26 @@ body {
 
     grid-template-columns: 1fr 1fr;
 
+    /*
+       بسیار مهم:
+       هر دو طرف به یک ارتفاع کشیده می‌شوند.
+    */
+    align-items: stretch;
+
+    background: #ffffff;
+
     overflow: hidden;
 
     border-radius: 24px;
-
-    background: #ffffff;
 
     box-shadow:
         0 15px 45px rgba(0, 0, 0, 0.10);
 }
 
 
-/* =====================================================
-   FORM CARD
-===================================================== */
+/* =========================================================
+   FORM SIDE
+========================================================= */
 
 .form-card {
 
@@ -72,9 +74,9 @@ body {
 }
 
 
-/* =====================================================
+/* =========================================================
    FORM TITLE
-===================================================== */
+========================================================= */
 
 .form-title {
 
@@ -98,11 +100,12 @@ body {
 }
 
 
-/* =====================================================
+/* =========================================================
    FORM GROUP
-===================================================== */
+========================================================= */
 
 .form-group {
+
     margin-bottom: 22px;
 }
 
@@ -123,9 +126,9 @@ body {
 }
 
 
-/* =====================================================
-   INPUT + TEXTAREA + SELECT
-===================================================== */
+/* =========================================================
+   INPUT / SELECT / TEXTAREA
+========================================================= */
 
 .form-group input[type="text"],
 .form-group input[type="email"],
@@ -155,10 +158,6 @@ body {
 }
 
 
-/* =====================================================
-   TEXTAREA
-===================================================== */
-
 .form-group textarea {
 
     resize: vertical;
@@ -169,23 +168,17 @@ body {
 }
 
 
-/* =====================================================
-   SELECT
-===================================================== */
-
 .form-group select {
 
     cursor: pointer;
-
-    appearance: auto;
 
     min-height: 46px;
 }
 
 
-/* =====================================================
+/* =========================================================
    MULTIPLE SELECT
-===================================================== */
+========================================================= */
 
 .form-group select[multiple] {
 
@@ -213,9 +206,9 @@ body {
 }
 
 
-/* =====================================================
+/* =========================================================
    PLACEHOLDER
-===================================================== */
+========================================================= */
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
@@ -224,9 +217,9 @@ body {
 }
 
 
-/* =====================================================
+/* =========================================================
    FOCUS
-===================================================== */
+========================================================= */
 
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus,
@@ -243,9 +236,9 @@ body {
 }
 
 
-/* =====================================================
+/* =========================================================
    SELECT HINT
-===================================================== */
+========================================================= */
 
 .select-hint {
 
@@ -261,9 +254,9 @@ body {
 }
 
 
-/* =====================================================
+/* =========================================================
    SUBMIT BUTTON
-===================================================== */
+========================================================= */
 
 .form-card button {
 
@@ -302,9 +295,9 @@ body {
 }
 
 
-/* =====================================================
-   INFORMATION CARD
-===================================================== */
+/* =========================================================
+   BLUE INFORMATION CARD
+========================================================= */
 
 .info-card {
 
@@ -312,9 +305,13 @@ body {
 
     overflow: hidden;
 
-    min-height: 700px;
+    /*
+       این قسمت باعث می‌شود کارت آبی
+       تمام ارتفاع فرم را بگیرد.
+    */
+    min-height: 100%;
 
-    padding: 65px 55px;
+    padding: 70px 60px;
 
     background: #34B4EC;
 
@@ -324,35 +321,15 @@ body {
 
     flex-direction: column;
 
-    justify-content: center;
+    justify-content: space-between;
 
     border-radius: 0 24px 24px 0;
 }
 
 
-/* =====================================================
+/* =========================================================
    DECORATIVE CIRCLES
-===================================================== */
-
-.info-card::after {
-
-    content: "";
-
-    position: absolute;
-
-    width: 420px;
-
-    height: 420px;
-
-    right: -230px;
-
-    bottom: -190px;
-
-    border: 1px solid rgba(255, 255, 255, 0.18);
-
-    border-radius: 50%;
-}
-
+========================================================= */
 
 .info-card::before {
 
@@ -360,77 +337,127 @@ body {
 
     position: absolute;
 
-    width: 250px;
+    width: 280px;
+    height: 280px;
 
-    height: 250px;
+    right: -150px;
+    top: -130px;
 
-    right: -140px;
-
-    top: -120px;
-
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.13);
 
     border-radius: 50%;
+
+    pointer-events: none;
 }
 
 
-/* =====================================================
-   INFORMATION TEXT
-===================================================== */
+.info-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 470px;
+    height: 470px;
+
+    right: -250px;
+    bottom: -210px;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TOP CONTENT
+========================================================= */
+
+.info-top {
+
+    position: relative;
+
+    z-index: 2;
+}
+
 
 .info-label {
 
-    position: relative;
+    display: block;
 
-    z-index: 2;
-
-    font-size: 12px;
+    font-size: 13px;
 
     font-weight: bold;
 
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
 
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 
+/* =========================================================
+   BLUE CARD TITLE
+========================================================= */
+
 .info-card h1 {
 
-    position: relative;
+    font-size: clamp(42px, 4.3vw, 58px);
 
-    z-index: 2;
+    line-height: 1.05;
 
-    font-size: clamp(36px, 4vw, 52px);
+    letter-spacing: -1px;
 
-    line-height: 1.08;
-
-    margin-bottom: 28px;
+    margin-bottom: 35px;
 
     color: #ffffff;
 }
 
 
-.info-card p {
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.info-description {
+
+    max-width: 540px;
+
+    margin-bottom: 25px;
+}
+
+
+.info-description p {
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.95);
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.benefits {
 
     position: relative;
 
     z-index: 2;
 
-    max-width: 520px;
+    display: flex;
 
-    font-size: 14px;
+    flex-direction: column;
 
-    line-height: 1.7;
+    gap: 25px;
 
-    color: rgba(255, 255, 255, 0.94);
-
-    margin-bottom: 14px;
+    margin-top: 10px;
 }
 
-
-/* =====================================================
-   BENEFITS
-===================================================== */
 
 .benefit {
 
@@ -440,21 +467,23 @@ body {
 
     display: flex;
 
-    align-items: center;
+    align-items: flex-start;
 
-    gap: 13px;
-
-    margin-top: 17px;
+    gap: 15px;
 }
 
 
+/* =========================================================
+   CHECK CIRCLE
+========================================================= */
+
 .check {
 
-    width: 34px;
+    width: 38px;
 
-    height: 34px;
+    height: 38px;
 
-    min-width: 34px;
+    min-width: 38px;
 
     display: flex;
 
@@ -464,21 +493,29 @@ body {
 
     border-radius: 50%;
 
-    background: rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.17);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    font-size: 16px;
 
     font-weight: bold;
-
-    font-size: 15px;
 }
 
+
+/* =========================================================
+   BENEFIT TEXT
+========================================================= */
 
 .benefit strong {
 
     display: block;
 
-    font-size: 14px;
+    font-size: 15px;
 
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+
+    color: #ffffff;
 }
 
 
@@ -486,15 +523,65 @@ body {
 
     display: block;
 
-    font-size: 11px;
+    max-width: 400px;
 
-    color: rgba(255, 255, 255, 0.78);
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.82);
 }
 
 
-/* =====================================================
+/* =========================================================
+   BOTTOM TEXT
+========================================================= */
+
+.info-bottom {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+
+.bottom-line {
+
+    width: 35px;
+
+    height: 2px;
+
+    min-width: 35px;
+
+    margin-top: 9px;
+
+    background: rgba(255, 255, 255, 0.7);
+}
+
+
+.info-bottom p {
+
+    max-width: 420px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =========================================================
    TABLET
-===================================================== */
+========================================================= */
 
 @media (max-width: 950px) {
 
@@ -506,6 +593,7 @@ body {
     .involvement-section {
 
         grid-template-columns: 1fr;
+
     }
 
 
@@ -517,23 +605,30 @@ body {
 
     .info-card {
 
-        min-height: auto;
+        min-height: 650px;
 
-        padding: 55px 40px;
+        padding: 60px 45px;
 
         border-radius: 0 0 24px 24px;
+    }
+
+
+    .info-card h1 {
+
+        font-size: 48px;
     }
 
 }
 
 
-/* =====================================================
+/* =========================================================
    MOBILE
-===================================================== */
+========================================================= */
 
 @media (max-width: 600px) {
 
     body {
+
         padding: 12px;
     }
 
@@ -568,39 +663,84 @@ body {
 
     .info-card {
 
-        padding: 42px 25px;
+        min-height: 620px;
+
+        padding: 45px 25px;
 
         border-radius: 0 0 18px 18px;
     }
 
 
-    .info-card h1 {
+    .info-label {
 
-        font-size: 36px;
+        font-size: 11px;
+
+        letter-spacing: 2px;
     }
 
 
-    .info-card p {
+    .info-card h1 {
+
+        font-size: 38px;
+
+        line-height: 1.08;
+
+        margin-bottom: 25px;
+    }
+
+
+    .info-description p {
+
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+
+    .benefits {
+
+        gap: 20px;
+    }
+
+
+    .check {
+
+        width: 32px;
+
+        height: 32px;
+
+        min-width: 32px;
+    }
+
+
+    .benefit strong {
 
         font-size: 13px;
     }
 
 
-    .form-group select[multiple] {
+    .benefit small {
 
-        min-height: 105px;
+        font-size: 11px;
+    }
+
+
+    .info-bottom {
+
+        margin-top: 25px;
     }
 
 }
 
 
-/* =====================================================
+/* =========================================================
    SMALL MOBILE
-===================================================== */
+========================================================= */
 
 @media (max-width: 400px) {
 
     body {
+
         padding: 8px;
     }
 
@@ -613,13 +753,21 @@ body {
 
     .info-card {
 
-        padding: 35px 20px;
+        min-height: 600px;
+
+        padding: 38px 20px;
     }
 
 
     .info-card h1 {
 
-        font-size: 31px;
+        font-size: 32px;
+    }
+
+
+    .info-description p {
+
+        font-size: 12px;
     }
 
 

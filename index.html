@@ -2,391 +2,350 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>SAWE | Get Involved</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
 
-    <!-- =====================================================
-         VOLUNTEER FORM
-    ====================================================== -->
+<!-- =========================================================
+     VOLUNTEER FORM
+========================================================= -->
 
-    <section class="involvement-section">
+<section class="involvement-section">
 
-        <!-- FORM -->
+    <!-- ================= FORM ================= -->
 
-        <div class="form-card">
+    <div class="form-card">
 
-            <form
-                action="https://formsubmit.co/contact@saweofficial.org"
-                method="POST"
+        <form
+            action="https://formsubmit.co/contact@saweofficial.org"
+            method="POST"
+        >
+
+            <input
+                type="hidden"
+                name="_subject"
+                value="New SAWE Volunteer Application"
             >
 
-                <input
-                    type="hidden"
-                    name="_subject"
-                    value="New SAWE Volunteer Application"
-                >
+            <input
+                type="hidden"
+                name="_template"
+                value="table"
+            >
+
+            <input
+                type="hidden"
+                name="_captcha"
+                value="true"
+            >
+
+
+            <h2 class="form-title">
+                Volunteer Form
+            </h2>
+
+            <p class="form-intro">
+                Please complete the form below to join us as a volunteer.
+            </p>
+
+
+            <div class="form-group">
+                <label>Full Name *</label>
 
                 <input
-                    type="hidden"
-                    name="_template"
-                    value="table"
+                    type="text"
+                    name="Full Name"
+                    placeholder="Enter your full name"
+                    required
                 >
+            </div>
+
+
+            <div class="form-group">
+                <label>Email Address *</label>
 
                 <input
-                    type="hidden"
-                    name="_captcha"
-                    value="true"
+                    type="email"
+                    name="Email"
+                    placeholder="example@email.com"
+                    required
                 >
+            </div>
 
 
-                <h2 class="form-title">
-                    Volunteer Form
-                </h2>
+            <div class="form-group">
+                <label>Phone Number</label>
 
-                <p class="form-intro">
-                    Please complete the form below to join us as a volunteer.
-                </p>
+                <input
+                    type="tel"
+                    name="Phone Number"
+                    placeholder="+93 7XX XXX XXX"
+                >
+            </div>
 
 
-                <!-- Full Name -->
+            <div class="form-group">
+                <label>Country / Province / City</label>
 
-                <div class="form-group">
+                <input
+                    type="text"
+                    name="Location"
+                    placeholder="Country / Province / City"
+                >
+            </div>
 
-                    <label>
-                        Full Name *
-                    </label>
 
-                    <input
-                        type="text"
-                        name="Full Name"
-                        placeholder="Enter your full name"
-                        required
-                    >
+            <div class="form-group">
+                <label>Current Occupation or Student Status</label>
 
-                </div>
+                <input
+                    type="text"
+                    name="Occupation or Student Status"
+                    placeholder="e.g. Student, Engineer, Teacher"
+                >
+            </div>
 
 
-                <!-- Email -->
+            <div class="form-group">
 
-                <div class="form-group">
+                <label>Academic Qualifications</label>
 
-                    <label>
-                        Email Address *
-                    </label>
+                <select name="Academic Qualification">
 
-                    <input
-                        type="email"
-                        name="Email"
-                        placeholder="example@email.com"
-                        required
-                    >
+                    <option value="">
+                        Select qualification
+                    </option>
 
-                </div>
+                    <option value="Bachelor">
+                        Bachelor
+                    </option>
 
+                    <option value="Master">
+                        Master
+                    </option>
 
-                <!-- Phone -->
+                    <option value="Doctorate">
+                        Doctorate
+                    </option>
 
-                <div class="form-group">
+                    <option value="Other">
+                        Other
+                    </option>
 
-                    <label>
-                        Phone Number
-                    </label>
+                </select>
 
-                    <input
-                        type="tel"
-                        name="Phone Number"
-                        placeholder="+93 7XX XXX XXX"
-                    >
+            </div>
 
-                </div>
 
+            <div class="form-group">
 
-                <!-- Location -->
+                <label>
+                    Engineering Specialization or Field of Interest
+                </label>
 
-                <div class="form-group">
+                <select name="Engineering Specialization">
 
-                    <label>
-                        Country / Province / City
-                    </label>
+                    <option value="">
+                        Select your field
+                    </option>
 
-                    <input
-                        type="text"
-                        name="Location"
-                        placeholder="Country / Province / City"
-                    >
+                    <option value="Civil Engineering">
+                        Civil Engineering
+                    </option>
 
-                </div>
+                    <option value="Architecture">
+                        Architecture
+                    </option>
 
+                    <option value="Electrical Engineering">
+                        Electrical Engineering
+                    </option>
 
-                <!-- Occupation -->
+                    <option value="Mechanical Engineering">
+                        Mechanical Engineering
+                    </option>
 
-                <div class="form-group">
+                    <option value="IT / Data / AI">
+                        IT / Data / AI
+                    </option>
 
-                    <label>
-                        Current Occupation or Student Status
-                    </label>
+                    <option value="Urban Planning">
+                        Urban Planning
+                    </option>
 
-                    <input
-                        type="text"
-                        name="Occupation or Student Status"
-                        placeholder="e.g. Student, Engineer, Teacher"
-                    >
+                    <option value="Environmental / Climate">
+                        Environmental / Climate
+                    </option>
 
-                </div>
+                    <option value="Other">
+                        Other
+                    </option>
 
+                </select>
 
-                <!-- Academic Qualification -->
+            </div>
 
-                <div class="form-group">
 
-                    <label>
-                        Academic Qualifications
-                    </label>
+            <div class="form-group">
 
-                    <select name="Academic Qualification">
+                <label>
+                    Volunteer Role Interested In
+                </label>
 
-                        <option value="">
-                            Select qualification
-                        </option>
+                <select name="Volunteer Role">
 
-                        <option value="Bachelor">
-                            Bachelor
-                        </option>
+                    <option value="">
+                        Select a volunteer role
+                    </option>
 
-                        <option value="Master">
-                            Master
-                        </option>
+                    <option value="Teaching">
+                        Teaching
+                    </option>
 
-                        <option value="Doctorate">
-                            Doctorate
-                        </option>
+                    <option value="Graphic Design">
+                        Graphic Design
+                    </option>
 
-                        <option value="Other">
-                            Other
-                        </option>
+                    <option value="Event Planning">
+                        Event Planning
+                    </option>
 
-                    </select>
+                    <option value="Mentorship">
+                        Mentorship
+                    </option>
 
-                </div>
+                    <option value="Other">
+                        Other
+                    </option>
 
+                </select>
 
-                <!-- Engineering Field -->
+            </div>
 
-                <div class="form-group">
 
-                    <label>
-                        Engineering Specialization or Field of Interest
-                    </label>
+            <div class="form-group">
 
-                    <select name="Engineering Specialization">
+                <label>
+                    Preferred Time Commitment
+                </label>
 
-                        <option value="">
-                            Select your field
-                        </option>
+                <select name="Time Commitment">
 
-                        <option value="Civil Engineering">
-                            Civil Engineering
-                        </option>
+                    <option value="">
+                        Select time commitment
+                    </option>
 
-                        <option value="Architecture">
-                            Architecture
-                        </option>
+                    <option value="One-time event">
+                        One-time event
+                    </option>
 
-                        <option value="Electrical Engineering">
-                            Electrical Engineering
-                        </option>
+                    <option value="Short-term project">
+                        Short-term project
+                    </option>
 
-                        <option value="Mechanical Engineering">
-                            Mechanical Engineering
-                        </option>
+                    <option value="Long-term commitment">
+                        Long-term commitment
+                    </option>
 
-                        <option value="IT / Data / AI">
-                            IT / Data / AI
-                        </option>
+                    <option value="Flexible">
+                        Flexible
+                    </option>
 
-                        <option value="Urban Planning">
-                            Urban Planning
-                        </option>
+                </select>
 
-                        <option value="Environmental / Climate">
-                            Environmental / Climate
-                        </option>
+            </div>
 
-                        <option value="Other">
-                            Other
-                        </option>
 
-                    </select>
+            <div class="form-group">
 
-                </div>
+                <label>
+                    Days and Hours Available
+                </label>
 
+                <textarea
+                    name="Availability"
+                    rows="3"
+                    placeholder="e.g. Saturday and Sunday, 2 PM - 5 PM"
+                ></textarea>
 
-                <!-- Volunteer Role -->
+            </div>
 
-                <div class="form-group">
 
-                    <label>
-                        Volunteer Role Interested In
-                    </label>
+            <div class="form-group">
 
-                    <select name="Volunteer Role">
+                <label>
+                    What are your expectations from volunteering?
+                </label>
 
-                        <option value="">
-                            Select a volunteer role
-                        </option>
+                <textarea
+                    name="Volunteer Expectations"
+                    rows="4"
+                    placeholder="Tell us about your expectations..."
+                ></textarea>
 
-                        <option value="Teaching">
-                            Teaching
-                        </option>
+            </div>
 
-                        <option value="Graphic Design">
-                            Graphic Design
-                        </option>
 
-                        <option value="Event Planning">
-                            Event Planning
-                        </option>
+            <div class="form-group">
 
-                        <option value="Mentorship">
-                            Mentorship
-                        </option>
+                <label>
+                    Areas of Interest or Projects
+                </label>
 
-                        <option value="Other">
-                            Other
-                        </option>
+                <textarea
+                    name="Projects of Interest"
+                    rows="4"
+                    placeholder="Tell us about projects you would like to contribute to..."
+                ></textarea>
 
-                    </select>
+            </div>
 
-                </div>
 
+            <div class="form-group">
 
-                <!-- Time Commitment -->
+                <label>
+                    Suggestions or Comments
+                </label>
 
-                <div class="form-group">
+                <textarea
+                    name="Suggestions or Comments"
+                    rows="3"
+                    placeholder="Write your suggestions or comments..."
+                ></textarea>
 
-                    <label>
-                        Preferred Time Commitment
-                    </label>
+            </div>
 
-                    <select name="Time Commitment">
 
-                        <option value="">
-                            Select time commitment
-                        </option>
+            <button type="submit">
+                Submit Volunteer Form
+            </button>
 
-                        <option value="One-time event">
-                            One-time event
-                        </option>
+        </form>
 
-                        <option value="Short-term project">
-                            Short-term project
-                        </option>
+    </div>
 
-                        <option value="Long-term commitment">
-                            Long-term commitment
-                        </option>
 
-                        <option value="Flexible">
-                            Flexible
-                        </option>
+    <!-- ================= BLUE INFO ================= -->
 
-                    </select>
+    <div class="info-card">
 
-                </div>
-
-
-                <!-- Availability -->
-
-                <div class="form-group">
-
-                    <label>
-                        Days and Hours Available
-                    </label>
-
-                    <textarea
-                        name="Availability"
-                        rows="3"
-                        placeholder="e.g. Saturday and Sunday, 2 PM - 5 PM"
-                    ></textarea>
-
-                </div>
-
-
-                <!-- Expectations -->
-
-                <div class="form-group">
-
-                    <label>
-                        What are your expectations from volunteering?
-                    </label>
-
-                    <textarea
-                        name="Volunteer Expectations"
-                        rows="4"
-                        placeholder="Tell us about your expectations..."
-                    ></textarea>
-
-                </div>
-
-
-                <!-- Projects -->
-
-                <div class="form-group">
-
-                    <label>
-                        Areas of Interest or Projects
-                    </label>
-
-                    <textarea
-                        name="Projects of Interest"
-                        rows="4"
-                        placeholder="Tell us about projects you would like to contribute to..."
-                    ></textarea>
-
-                </div>
-
-
-                <!-- Comments -->
-
-                <div class="form-group">
-
-                    <label>
-                        Suggestions or Comments
-                    </label>
-
-                    <textarea
-                        name="Suggestions or Comments"
-                        rows="3"
-                        placeholder="Write your suggestions or comments..."
-                    ></textarea>
-
-                </div>
-
-
-                <button type="submit">
-                    Submit Volunteer Form
-                </button>
-
-            </form>
-
-        </div>
-
-
-        <!-- INFORMATION -->
-
-        <div class="info-card">
+        <div class="info-top">
 
             <span class="info-label">
                 VOLUNTEER WITH SAWE
             </span>
+
 
             <h1>
                 Share Your Skills.
@@ -396,483 +355,505 @@
                 Future.
             </h1>
 
-            <p>
-                Join the Society of Afghan Women Engineers as a volunteer
-                and contribute your time, skills, and passion to meaningful
-                initiatives.
-            </p>
 
-            <p>
-                Whether you are an engineer, educator, designer, student,
-                or enthusiast, your contribution can help create new
-                opportunities for Afghan women in engineering.
-            </p>
+            <div class="info-description">
 
-
-            <div class="benefit">
-
-                <span class="check">✓</span>
-
-                <div>
-                    <strong>Share Your Skills</strong>
-
-                    <small>
-                        Contribute your knowledge and experience.
-                    </small>
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <span class="check">✓</span>
-
-                <div>
-                    <strong>Support Our Initiatives</strong>
-
-                    <small>
-                        Help with training, events and mentoring.
-                    </small>
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <span class="check">✓</span>
-
-                <div>
-                    <strong>Create Positive Impact</strong>
-
-                    <small>
-                        Help create opportunities for women in engineering.
-                    </small>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         MEMBERSHIP FORM
-    ====================================================== -->
-
-    <section class="involvement-section">
-
-        <!-- FORM -->
-
-        <div class="form-card">
-
-            <form
-                action="https://formsubmit.co/contact@saweofficial.org"
-                method="POST"
-            >
-
-                <input
-                    type="hidden"
-                    name="_subject"
-                    value="New SAWE Membership Application"
-                >
-
-                <input
-                    type="hidden"
-                    name="_template"
-                    value="table"
-                >
-
-                <input
-                    type="hidden"
-                    name="_captcha"
-                    value="true"
-                >
-
-
-                <h2 class="form-title">
-                    Membership Form
-                </h2>
-
-                <p class="form-intro">
-                    Complete this form to become part of the SAWE community.
+                <p>
+                    Join the Society of Afghan Women Engineers as a volunteer
+                    and contribute your time, skills, and passion to meaningful
+                    initiatives.
                 </p>
 
-
-                <!-- Full Name -->
-
-                <div class="form-group">
-
-                    <label>
-                        Full Name *
-                    </label>
-
-                    <input
-                        type="text"
-                        name="Full Name"
-                        placeholder="Enter your full name"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- Email -->
-
-                <div class="form-group">
-
-                    <label>
-                        Email Address *
-                    </label>
-
-                    <input
-                        type="email"
-                        name="Email"
-                        placeholder="example@email.com"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- Phone -->
-
-                <div class="form-group">
-
-                    <label>
-                        Phone Number
-                    </label>
-
-                    <input
-                        type="tel"
-                        name="Phone Number"
-                        placeholder="+93 7XX XXX XXX"
-                    >
-
-                </div>
-
-
-                <!-- Location -->
-
-                <div class="form-group">
-
-                    <label>
-                        Country / Province / City
-                    </label>
-
-                    <input
-                        type="text"
-                        name="Location"
-                        placeholder="Country / Province / City"
-                    >
-
-                </div>
-
-
-                <!-- Education -->
-
-                <div class="form-group">
-
-                    <label>
-                        Highest Level of Education
-                    </label>
-
-                    <select name="Highest Education">
-
-                        <option value="">
-                            Select education level
-                        </option>
-
-                        <option value="Undergraduate">
-                            Undergraduate
-                        </option>
-
-                        <option value="Bachelor's">
-                            Bachelor's
-                        </option>
-
-                        <option value="Master's">
-                            Master's
-                        </option>
-
-                        <option value="PhD">
-                            PhD
-                        </option>
-
-                        <option value="Other">
-                            Other
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- University -->
-
-                <div class="form-group">
-
-                    <label>
-                        University / Institution
-                    </label>
-
-                    <input
-                        type="text"
-                        name="University or Institution"
-                        placeholder="Enter university or institution"
-                    >
-
-                </div>
-
-
-                <!-- Country of Study -->
-
-                <div class="form-group">
-
-                    <label>
-                        Country of Study
-                    </label>
-
-                    <input
-                        type="text"
-                        name="Country of Study"
-                        placeholder="Enter country"
-                    >
-
-                </div>
-
-
-                <!-- Engineering Field -->
-
-                <div class="form-group">
-
-                    <label>
-                        Engineering Specialization or Field
-                    </label>
-
-                    <select name="Engineering Field">
-
-                        <option value="">
-                            Select your field
-                        </option>
-
-                        <option value="Civil">
-                            Civil
-                        </option>
-
-                        <option value="Architecture">
-                            Architecture
-                        </option>
-
-                        <option value="Electrical">
-                            Electrical
-                        </option>
-
-                        <option value="Mechanical">
-                            Mechanical
-                        </option>
-
-                        <option value="IT / Data / AI">
-                            IT / Data / AI
-                        </option>
-
-                        <option value="Urban Planning">
-                            Urban Planning
-                        </option>
-
-                        <option value="Environmental / Climate">
-                            Environmental / Climate
-                        </option>
-
-                        <option value="Other">
-                            Other
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- Career Stage -->
-
-                <div class="form-group">
-
-                    <label>
-                        Career Stage
-                    </label>
-
-                    <select name="Career Stage">
-
-                        <option value="">
-                            Select career stage
-                        </option>
-
-                        <option value="Student">
-                            Student
-                        </option>
-
-                        <option value="Fresh graduate">
-                            Fresh graduate
-                        </option>
-
-                        <option value="Early career (0-3 years)">
-                            Early career (0–3 years)
-                        </option>
-
-                        <option value="Mid-level (3-7 years)">
-                            Mid-level (3–7 years)
-                        </option>
-
-                        <option value="Career break">
-                            Career break
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- Support -->
-
-                <div class="form-group">
-
-                    <label>
-                        What Do You Want Support With?
-                    </label>
-
-                    <select
-                        name="Support Needed"
-                        multiple
-                    >
-
-                        <option value="CV / Resume writing">
-                            CV / Resume writing
-                        </option>
-
-                        <option value="Scholarships">
-                            Scholarships
-                        </option>
-
-                        <option value="Career mentoring">
-                            Career mentoring
-                        </option>
-
-                        <option value="Technical training">
-                            Technical training
-                        </option>
-
-                        <option value="Research & Publishing">
-                            Research & Publishing
-                        </option>
-
-                        <option value="Leadership & Soft Skills">
-                            Leadership & Soft Skills
-                        </option>
-
-                        <option value="Networking">
-                            Networking
-                        </option>
-
-                        <option value="Other">
-                            Other
-                        </option>
-
-                    </select>
-
-                    <small class="select-hint">
-                        Hold Ctrl or Command to select multiple options.
-                    </small>
-
-                </div>
-
-
-                <!-- Interested In -->
-
-                <div class="form-group">
-
-                    <label>
-                        Interested in Attending
-                    </label>
-
-                    <select
-                        name="Interested In"
-                        multiple
-                    >
-
-                        <option value="Online sessions">
-                            Online sessions
-                        </option>
-
-                        <option value="In-person events">
-                            In-person events
-                        </option>
-
-                        <option value="Volunteering with SAWE">
-                            Volunteering with SAWE
-                        </option>
-
-                    </select>
-
-                    <small class="select-hint">
-                        You can select more than one option.
-                    </small>
-
-                </div>
-
-
-                <!-- Previous Experience -->
-
-                <div class="form-group">
-
-                    <label>
-                        Previous Volunteer or Community Engagement Experience
-                    </label>
-
-                    <textarea
-                        name="Previous Volunteer Experience"
-                        rows="4"
-                        placeholder="Tell us about your experience..."
-                    ></textarea>
-
-                </div>
-
-
-                <!-- Additional Comments -->
-
-                <div class="form-group">
-
-                    <label>
-                        Additional Comments, Suggestions or Specific Needs
-                    </label>
-
-                    <textarea
-                        name="Additional Comments"
-                        rows="3"
-                        placeholder="Write your comments..."
-                    ></textarea>
-
-                </div>
-
-
-                <button type="submit">
-                    Submit Membership Form
-                </button>
-
-            </form>
+                <p>
+                    Whether you are an engineer, educator, designer, student,
+                    or enthusiast, your contribution can help create new
+                    opportunities for Afghan women in engineering.
+                </p>
+
+            </div>
 
         </div>
 
 
-        <!-- INFORMATION -->
+        <div class="benefits">
 
-        <div class="info-card">
+            <div class="benefit">
+
+                <span class="check">
+                    ✓
+                </span>
+
+                <div>
+
+                    <strong>
+                        Share Your Skills
+                    </strong>
+
+                    <small>
+                        Contribute your knowledge, experience, creativity,
+                        and professional skills to meaningful activities.
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <span class="check">
+                    ✓
+                </span>
+
+                <div>
+
+                    <strong>
+                        Support Our Initiatives
+                    </strong>
+
+                    <small>
+                        Help with training sessions, workshops, events,
+                        education programs, and mentoring activities.
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <span class="check">
+                    ✓
+                </span>
+
+                <div>
+
+                    <strong>
+                        Create Positive Impact
+                    </strong>
+
+                    <small>
+                        Help create learning opportunities and professional
+                        pathways for women interested in engineering.
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-bottom">
+
+            <span class="bottom-line"></span>
+
+            <p>
+                Together, we can create opportunities for learning,
+                collaboration, leadership, and positive impact in our
+                communities.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MEMBERSHIP FORM
+========================================================= -->
+
+<section class="involvement-section">
+
+    <!-- ================= FORM ================= -->
+
+    <div class="form-card">
+
+        <form
+            action="https://formsubmit.co/contact@saweofficial.org"
+            method="POST"
+        >
+
+            <input
+                type="hidden"
+                name="_subject"
+                value="New SAWE Membership Application"
+            >
+
+            <input
+                type="hidden"
+                name="_template"
+                value="table"
+            >
+
+            <input
+                type="hidden"
+                name="_captcha"
+                value="true"
+            >
+
+
+            <h2 class="form-title">
+                Membership Form
+            </h2>
+
+            <p class="form-intro">
+                Complete this form to become part of the SAWE community.
+            </p>
+
+
+            <div class="form-group">
+
+                <label>
+                    Full Name *
+                </label>
+
+                <input
+                    type="text"
+                    name="Full Name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Email Address *
+                </label>
+
+                <input
+                    type="email"
+                    name="Email"
+                    placeholder="example@email.com"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    name="Phone Number"
+                    placeholder="+93 7XX XXX XXX"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Country / Province / City
+                </label>
+
+                <input
+                    type="text"
+                    name="Location"
+                    placeholder="Country / Province / City"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Highest Level of Education
+                </label>
+
+                <select name="Highest Education">
+
+                    <option value="">
+                        Select education level
+                    </option>
+
+                    <option value="Undergraduate">
+                        Undergraduate
+                    </option>
+
+                    <option value="Bachelor's">
+                        Bachelor's
+                    </option>
+
+                    <option value="Master's">
+                        Master's
+                    </option>
+
+                    <option value="PhD">
+                        PhD
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    University / Institution
+                </label>
+
+                <input
+                    type="text"
+                    name="University or Institution"
+                    placeholder="Enter university or institution"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Country of Study
+                </label>
+
+                <input
+                    type="text"
+                    name="Country of Study"
+                    placeholder="Enter country"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Engineering Specialization or Field
+                </label>
+
+                <select name="Engineering Field">
+
+                    <option value="">
+                        Select your field
+                    </option>
+
+                    <option value="Civil">
+                        Civil
+                    </option>
+
+                    <option value="Architecture">
+                        Architecture
+                    </option>
+
+                    <option value="Electrical">
+                        Electrical
+                    </option>
+
+                    <option value="Mechanical">
+                        Mechanical
+                    </option>
+
+                    <option value="IT / Data / AI">
+                        IT / Data / AI
+                    </option>
+
+                    <option value="Urban Planning">
+                        Urban Planning
+                    </option>
+
+                    <option value="Environmental / Climate">
+                        Environmental / Climate
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Career Stage
+                </label>
+
+                <select name="Career Stage">
+
+                    <option value="">
+                        Select career stage
+                    </option>
+
+                    <option value="Student">
+                        Student
+                    </option>
+
+                    <option value="Fresh graduate">
+                        Fresh graduate
+                    </option>
+
+                    <option value="Early career (0-3 years)">
+                        Early career (0–3 years)
+                    </option>
+
+                    <option value="Mid-level (3-7 years)">
+                        Mid-level (3–7 years)
+                    </option>
+
+                    <option value="Career break">
+                        Career break
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    What Do You Want Support With?
+                </label>
+
+                <select
+                    name="Support Needed"
+                    multiple
+                >
+
+                    <option value="CV / Resume writing">
+                        CV / Resume writing
+                    </option>
+
+                    <option value="Scholarships">
+                        Scholarships
+                    </option>
+
+                    <option value="Career mentoring">
+                        Career mentoring
+                    </option>
+
+                    <option value="Technical training">
+                        Technical training
+                    </option>
+
+                    <option value="Research & Publishing">
+                        Research & Publishing
+                    </option>
+
+                    <option value="Leadership & Soft Skills">
+                        Leadership & Soft Skills
+                    </option>
+
+                    <option value="Networking">
+                        Networking
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+                <small class="select-hint">
+                    Hold Ctrl or Command to select multiple options.
+                </small>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Interested in Attending
+                </label>
+
+                <select
+                    name="Interested In"
+                    multiple
+                >
+
+                    <option value="Online sessions">
+                        Online sessions
+                    </option>
+
+                    <option value="In-person events">
+                        In-person events
+                    </option>
+
+                    <option value="Volunteering with SAWE">
+                        Volunteering with SAWE
+                    </option>
+
+                </select>
+
+                <small class="select-hint">
+                    You can select more than one option.
+                </small>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Previous Volunteer or Community Engagement Experience
+                </label>
+
+                <textarea
+                    name="Previous Volunteer Experience"
+                    rows="4"
+                    placeholder="Tell us about your experience..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Additional Comments, Suggestions or Specific Needs
+                </label>
+
+                <textarea
+                    name="Additional Comments"
+                    rows="3"
+                    placeholder="Write your comments..."
+                ></textarea>
+
+            </div>
+
+
+            <button type="submit">
+                Submit Membership Form
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- ================= BLUE INFO ================= -->
+
+    <div class="info-card">
+
+        <div class="info-top">
 
             <span class="info-label">
                 BECOME A MEMBER
             </span>
+
 
             <h1>
                 Connect.
@@ -882,416 +863,443 @@
                 Grow Together.
             </h1>
 
-            <p>
-                Join the Society of Afghan Women Engineers and become
-                part of a community dedicated to empowering and advancing
-                women in engineering.
-            </p>
 
-            <p>
-                Connect with professionals, discover learning resources,
-                and participate in programs and community activities.
-            </p>
+            <div class="info-description">
 
-
-            <div class="benefit">
-
-                <span class="check">✓</span>
-
-                <div>
-                    <strong>Build Connections</strong>
-
-                    <small>
-                        Connect with engineers and professionals.
-                    </small>
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <span class="check">✓</span>
-
-                <div>
-                    <strong>Learn & Grow</strong>
-
-                    <small>
-                        Discover learning and development opportunities.
-                    </small>
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <span class="check">✓</span>
-
-                <div>
-                    <strong>Discover Opportunities</strong>
-
-                    <small>
-                        Explore programs, events and activities.
-                    </small>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         SPONSORSHIP FORM
-    ====================================================== -->
-
-    <section class="involvement-section">
-
-        <!-- FORM -->
-
-        <div class="form-card">
-
-            <form
-                action="https://formsubmit.co/contact@saweofficial.org"
-                method="POST"
-            >
-
-                <input
-                    type="hidden"
-                    name="_subject"
-                    value="New SAWE Sponsorship Application"
-                >
-
-                <input
-                    type="hidden"
-                    name="_template"
-                    value="table"
-                >
-
-                <input
-                    type="hidden"
-                    name="_captcha"
-                    value="true"
-                >
-
-
-                <h2 class="form-title">
-                    Sponsorship Form
-                </h2>
-
-                <p class="form-intro">
-                    Partner with SAWE and support women in engineering.
+                <p>
+                    Join the Society of Afghan Women Engineers and become
+                    part of a community dedicated to empowering and advancing
+                    women in engineering.
                 </p>
 
-
-                <!-- Name / Organization -->
-
-                <div class="form-group">
-
-                    <label>
-                        Full Name / Organization Name *
-                    </label>
-
-                    <input
-                        type="text"
-                        name="Full Name or Organization Name"
-                        placeholder="Enter your name or organization"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- Email -->
-
-                <div class="form-group">
-
-                    <label>
-                        Email Address *
-                    </label>
-
-                    <input
-                        type="email"
-                        name="Email"
-                        placeholder="example@email.com"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- Phone -->
-
-                <div class="form-group">
-
-                    <label>
-                        Phone Number
-                    </label>
-
-                    <input
-                        type="tel"
-                        name="Phone Number"
-                        placeholder="+93 7XX XXX XXX"
-                    >
-
-                </div>
-
-
-                <!-- Sponsorship Type -->
-
-                <div class="form-group">
-
-                    <label>
-                        Type of Sponsorship
-                    </label>
-
-                    <select name="Sponsorship Type">
-
-                        <option value="">
-                            Select sponsorship type
-                        </option>
-
-                        <option value="Financial Sponsorship">
-                            Financial Sponsorship
-                        </option>
-
-                        <option value="In-kind Sponsorship">
-                            In-kind Sponsorship
-                        </option>
-
-                        <option value="Other">
-                            Other
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- Amount -->
-
-                <div class="form-group">
-
-                    <label>
-                        Sponsorship Amount or Value
-                    </label>
-
-                    <input
-                        type="text"
-                        name="Sponsorship Amount or Value"
-                        placeholder="Amount and currency, if applicable"
-                    >
-
-                </div>
-
-
-                <!-- Payment -->
-
-                <div class="form-group">
-
-                    <label>
-                        Payment Method
-                    </label>
-
-                    <select name="Payment Method">
-
-                        <option value="">
-                            Select payment method
-                        </option>
-
-                        <option value="Bank Transfer">
-                            Bank Transfer
-                        </option>
-
-                        <option value="PayPal">
-                            PayPal
-                        </option>
-
-                        <option value="Credit Card">
-                            Credit Card
-                        </option>
-
-                        <option value="Mobile Money">
-                            Mobile Money
-                        </option>
-
-                        <option value="Check">
-                            Check
-                        </option>
-
-                        <option value="In-kind Donation">
-                            In-kind Donation
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- Duration -->
-
-                <div class="form-group">
-
-                    <label>
-                        Duration of Sponsorship
-                    </label>
-
-                    <select name="Sponsorship Duration">
-
-                        <option value="">
-                            Select duration
-                        </option>
-
-                        <option value="One-time">
-                            One-time
-                        </option>
-
-                        <option value="Monthly">
-                            Monthly
-                        </option>
-
-                        <option value="Quarterly">
-                            Quarterly
-                        </option>
-
-                        <option value="Annual">
-                            Annual
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- Project -->
-
-                <div class="form-group">
-
-                    <label>
-                        Specific Project or Initiative to Sponsor
-                    </label>
-
-                    <textarea
-                        name="Specific Project or Initiative"
-                        rows="4"
-                        placeholder="Tell us which project you would like to support..."
-                    ></textarea>
-
-                </div>
-
-
-                <!-- Benefits -->
-
-                <div class="form-group">
-
-                    <label>
-                        Benefits of Sponsorship
-                    </label>
-
-                    <select
-                        name="Sponsorship Benefits"
-                        multiple
-                    >
-
-                        <option value="Logo placement">
-                            Logo placement on promotional materials
-                        </option>
-
-                        <option value="Press releases">
-                            Mention in press releases
-                        </option>
-
-                        <option value="Social media promotion">
-                            Social media promotion
-                        </option>
-
-                        <option value="Other">
-                            Other
-                        </option>
-
-                    </select>
-
-                    <small class="select-hint">
-                        You can select more than one option.
-                    </small>
-
-                </div>
-
-
-                <!-- Networking -->
-
-                <div class="form-group">
-
-                    <label>
-                        Networking Opportunities
-                    </label>
-
-                    <select
-                        name="Networking Opportunities"
-                        multiple
-                    >
-
-                        <option value="Participation in events/workshops">
-                            Participation in events/workshops
-                        </option>
-
-                        <option value="Industry professionals">
-                            Access to network of industry professionals
-                        </option>
-
-                        <option value="Project collaboration">
-                            Opportunity to collaborate on projects
-                        </option>
-
-                        <option value="Other">
-                            Other
-                        </option>
-
-                    </select>
-
-                    <small class="select-hint">
-                        You can select more than one option.
-                    </small>
-
-                </div>
-
-
-                <!-- Comments -->
-
-                <div class="form-group">
-
-                    <label>
-                        Comments / Questions
-                    </label>
-
-                    <textarea
-                        name="Comments or Questions"
-                        rows="3"
-                        placeholder="Write your comments or questions..."
-                    ></textarea>
-
-                </div>
-
-
-                <button type="submit">
-                    Submit Sponsorship Form
-                </button>
-
-            </form>
+                <p>
+                    Connect with professionals, discover learning resources,
+                    and participate in programs, events, and community
+                    activities.
+                </p>
+
+            </div>
 
         </div>
 
 
-        <!-- INFORMATION -->
+        <div class="benefits">
 
-        <div class="info-card">
+            <div class="benefit">
+
+                <span class="check">
+                    ✓
+                </span>
+
+                <div>
+
+                    <strong>
+                        Build Connections
+                    </strong>
+
+                    <small>
+                        Connect with engineers, students, educators,
+                        and professionals from different fields.
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <span class="check">
+                    ✓
+                </span>
+
+                <div>
+
+                    <strong>
+                        Learn & Grow
+                    </strong>
+
+                    <small>
+                        Discover learning resources, training sessions,
+                        mentoring, and professional development opportunities.
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <span class="check">
+                    ✓
+                </span>
+
+                <div>
+
+                    <strong>
+                        Discover Opportunities
+                    </strong>
+
+                    <small>
+                        Explore programs, events, scholarships, volunteering,
+                        networking, and career opportunities.
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-bottom">
+
+            <span class="bottom-line"></span>
+
+            <p>
+                Membership is an opportunity to connect, learn from others,
+                share experiences, and grow together as a professional
+                community.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SPONSORSHIP FORM
+========================================================= -->
+
+<section class="involvement-section">
+
+    <!-- ================= FORM ================= -->
+
+    <div class="form-card">
+
+        <form
+            action="https://formsubmit.co/contact@saweofficial.org"
+            method="POST"
+        >
+
+            <input
+                type="hidden"
+                name="_subject"
+                value="New SAWE Sponsorship Application"
+            >
+
+            <input
+                type="hidden"
+                name="_template"
+                value="table"
+            >
+
+            <input
+                type="hidden"
+                name="_captcha"
+                value="true"
+            >
+
+
+            <h2 class="form-title">
+                Sponsorship Form
+            </h2>
+
+            <p class="form-intro">
+                Partner with SAWE and support women in engineering.
+            </p>
+
+
+            <div class="form-group">
+
+                <label>
+                    Full Name / Organization Name *
+                </label>
+
+                <input
+                    type="text"
+                    name="Full Name or Organization Name"
+                    placeholder="Enter your name or organization"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Email Address *
+                </label>
+
+                <input
+                    type="email"
+                    name="Email"
+                    placeholder="example@email.com"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    name="Phone Number"
+                    placeholder="+93 7XX XXX XXX"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Type of Sponsorship
+                </label>
+
+                <select name="Sponsorship Type">
+
+                    <option value="">
+                        Select sponsorship type
+                    </option>
+
+                    <option value="Financial Sponsorship">
+                        Financial Sponsorship
+                    </option>
+
+                    <option value="In-kind Sponsorship">
+                        In-kind Sponsorship
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Sponsorship Amount or Value
+                </label>
+
+                <input
+                    type="text"
+                    name="Sponsorship Amount or Value"
+                    placeholder="Amount and currency, if applicable"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Payment Method
+                </label>
+
+                <select name="Payment Method">
+
+                    <option value="">
+                        Select payment method
+                    </option>
+
+                    <option value="Bank Transfer">
+                        Bank Transfer
+                    </option>
+
+                    <option value="PayPal">
+                        PayPal
+                    </option>
+
+                    <option value="Credit Card">
+                        Credit Card
+                    </option>
+
+                    <option value="Mobile Money">
+                        Mobile Money
+                    </option>
+
+                    <option value="Check">
+                        Check
+                    </option>
+
+                    <option value="In-kind Donation">
+                        In-kind Donation
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Duration of Sponsorship
+                </label>
+
+                <select name="Sponsorship Duration">
+
+                    <option value="">
+                        Select duration
+                    </option>
+
+                    <option value="One-time">
+                        One-time
+                    </option>
+
+                    <option value="Monthly">
+                        Monthly
+                    </option>
+
+                    <option value="Quarterly">
+                        Quarterly
+                    </option>
+
+                    <option value="Annual">
+                        Annual
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Specific Project or Initiative to Sponsor
+                </label>
+
+                <textarea
+                    name="Specific Project or Initiative"
+                    rows="4"
+                    placeholder="Tell us which project you would like to support..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Benefits of Sponsorship
+                </label>
+
+                <select
+                    name="Sponsorship Benefits"
+                    multiple
+                >
+
+                    <option value="Logo placement">
+                        Logo placement on promotional materials
+                    </option>
+
+                    <option value="Press releases">
+                        Mention in press releases
+                    </option>
+
+                    <option value="Social media promotion">
+                        Social media promotion
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+                <small class="select-hint">
+                    You can select more than one option.
+                </small>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Networking Opportunities
+                </label>
+
+                <select
+                    name="Networking Opportunities"
+                    multiple
+                >
+
+                    <option value="Participation in events/workshops">
+                        Participation in events/workshops
+                    </option>
+
+                    <option value="Industry professionals">
+                        Access to network of industry professionals
+                    </option>
+
+                    <option value="Project collaboration">
+                        Opportunity to collaborate on projects
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+                <small class="select-hint">
+                    You can select more than one option.
+                </small>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Comments / Questions
+                </label>
+
+                <textarea
+                    name="Comments or Questions"
+                    rows="3"
+                    placeholder="Write your comments or questions..."
+                ></textarea>
+
+            </div>
+
+
+            <button type="submit">
+                Submit Sponsorship Form
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- ================= BLUE INFO ================= -->
+
+    <div class="info-card">
+
+        <div class="info-top">
 
             <span class="info-label">
                 PARTNER WITH SAWE
             </span>
+
 
             <h1>
                 Support Women.
@@ -1301,28 +1309,44 @@
                 Opportunities.
             </h1>
 
-            <p>
-                Your support can help the Society of Afghan Women Engineers
-                provide education, mentorship, resources, and professional
-                opportunities for aspiring women engineers.
-            </p>
 
-            <p>
-                Organizations, companies, institutions, and individuals
-                can work with us to create meaningful opportunities.
-            </p>
+            <div class="info-description">
 
+                <p>
+                    Your support can help the Society of Afghan Women Engineers
+                    provide education, mentorship, resources, and professional
+                    opportunities for aspiring women engineers.
+                </p>
+
+                <p>
+                    Organizations, companies, institutions, and individuals
+                    can work with us to create meaningful opportunities.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="benefits">
 
             <div class="benefit">
 
-                <span class="check">✓</span>
+                <span class="check">
+                    ✓
+                </span>
 
                 <div>
-                    <strong>Support Education</strong>
+
+                    <strong>
+                        Support Education
+                    </strong>
 
                     <small>
-                        Help provide valuable learning opportunities.
+                        Help provide valuable learning opportunities,
+                        training programs, and educational resources.
                     </small>
+
                 </div>
 
             </div>
@@ -1330,14 +1354,21 @@
 
             <div class="benefit">
 
-                <span class="check">✓</span>
+                <span class="check">
+                    ✓
+                </span>
 
                 <div>
-                    <strong>Empower Future Engineers</strong>
+
+                    <strong>
+                        Empower Future Engineers
+                    </strong>
 
                     <small>
-                        Support women building careers in engineering.
+                        Support women as they build knowledge, skills,
+                        confidence, and careers in engineering.
                     </small>
+
                 </div>
 
             </div>
@@ -1345,21 +1376,42 @@
 
             <div class="benefit">
 
-                <span class="check">✓</span>
+                <span class="check">
+                    ✓
+                </span>
 
                 <div>
-                    <strong>Build Strong Partnerships</strong>
+
+                    <strong>
+                        Build Strong Partnerships
+                    </strong>
 
                     <small>
-                        Collaborate on meaningful programs and projects.
+                        Collaborate with SAWE on meaningful programs,
+                        projects, workshops, and community initiatives.
                     </small>
+
                 </div>
 
             </div>
 
         </div>
 
-    </section>
+
+        <div class="info-bottom">
+
+            <span class="bottom-line"></span>
+
+            <p>
+                Together, we can invest in education, strengthen professional
+                networks, and create new opportunities for women in engineering.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 </body>
