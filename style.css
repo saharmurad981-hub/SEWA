@@ -1,445 +1,78 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
-    min-height: 100vh;
-
-    padding: 40px;
-
     font-family: Arial, Helvetica, sans-serif;
-
-    /* White + light blue gradient */
-
-    background:
-        linear-gradient(
-            110deg,
-            #ffffff 0%,
-            #ffffff 48%,
-            #e8f7ff 48%,
-            #8fc9e6 100%
-        );
-
+    background: #ffffff;
     color: #222;
+    padding: 40px;
 }
 
 
-/* =========================
-   MAIN CONTAINER
-========================= */
+/* =========================================
+   MAIN LAYOUT
+========================================= */
 
-.grid-box {
+.involvement-section {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto 60px;
 
     display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
 
-    grid-template-columns: minmax(0, 1.1fr) minmax(350px, 0.9fr);
+    gap: 0;
 
-    gap: 40px;
-
-    max-width: 1400px;
-
-    margin: 0 auto;
-
-    padding: 40px;
-
-    background: rgba(255, 255, 255, 0.9);
-
-    border-radius: 25px;
-
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.08);
-
-        margin-top: 30px;
-}
-
-
-/* =========================
-   CONTENT
-========================= */
-
-.content {
-    min-width: 0;
-}
-
-
-.content h1 {
-
-    font-size: clamp(32px, 4vw, 55px);
-
-    line-height: 1.2;
-
-    margin-bottom: 12px;
-
-    color: #222;
-}
-
-
-.content span {
-
-    display: block;
-
-    color: #1599e8;
-
-    font-size: 18px;
-
-    font-weight: bold;
-
-    line-height: 1.6;
-
-    margin-bottom: 18px;
-}
-
-
-.content p {
-
-    max-width: 70ch;
-
-    line-height: 1.7;
-
-    color: #555;
-
-    font-size: 16px;
-}
-
-
-/* =========================
-   IMAGE SLIDER
-========================= */
-
-.slider {
-
-    width: 100%;
+    border-radius: 24px;
 
     overflow: hidden;
 
-    margin: 35px 0;
-
-    border-radius: 18px;
-
-    padding: 15px 0;
-
-    background: #f8fcff;
-
-    box-shadow:
-        inset 0 0 20px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.10);
 }
 
 
-.img-rotat {
+/* =========================================
+   FORM CARD
+========================================= */
+
+.form-card {
+    background: #ffffff;
+
+    padding: 45px 50px;
 
     display: flex;
-
-    width: max-content;
-
-    gap: 18px;
-
     align-items: center;
-
-    animation: moveImages 20s linear infinite;
 }
 
 
-/* Pause animation when mouse is over slider */
-
-.slider:hover .img-rotat {
-
-    animation-play-state: paused;
-}
-
-
-.img-rotat img {
-
-    width: 150px;
-
-    height: 190px;
-
-    object-fit: cover;
-
-    flex-shrink: 0;
-
-    border: 2px solid #34b4ec;
-
-    border-radius: 5px 25px 5px 25px;
-
-    box-shadow:
-        0 8px 20px rgba(0, 0, 0, 0.12);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-
-.img-rotat img:hover {
-
-    transform: translateY(-8px) scale(1.03);
-
-    box-shadow:
-        0 15px 30px rgba(0, 0, 0, 0.18);
-}
-
-
-/* Infinite animation */
-
-@keyframes moveImages {
-
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(calc(-50% - 9px));
-    }
-
-}
-
-
-/* =========================
-   HELP CONTAINER
-========================= */
-
-.help-container {
-
-    margin-top: 30px;
-
-    padding: 25px;
-
-    background: white;
-
-    border-radius: 18px;
-
-    border: 1px solid #e8e8e8;
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.08);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-
-.help-container:hover {
-
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 18px 40px rgba(0, 0, 0, 0.12);
-}
-
-
-.help-container h2 {
-
-    margin-bottom: 18px;
-
-    font-size: 25px;
-}
-
-
-.help-cards {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 12px;
-}
-
-
-/* =========================
-   SMALL CARDS
-========================= */
-
-.small-sec {
-
-    padding: 12px 18px;
-
-    color: #1599e8;
-
-    background: #f7fcff;
-
-    border: 1px solid #ccecff;
-
-    border-radius: 30px;
-
-    cursor: pointer;
-
-    box-shadow:
-        0 5px 15px rgba(0, 0, 0, 0.06);
-
-    transition:
-        transform 0.3s ease,
-        background 0.3s ease,
-        color 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-
-.small-sec:hover {
-
-    transform: translateY(-5px);
-
-    background: #34b4ec;
-
-    color: white;
-
-    box-shadow:
-        0 10px 20px rgba(52, 180, 236, 0.25);
-}
-
-
-/* =========================
-   FORM
-========================= */
-
-.form {
-
+.form-card form {
     width: 100%;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: flex-start;
-
-    
 }
 
 
-#form {
-
-    width: 100%;
-
-    min-height: 720px;
-
-    border: none;
-
-    border-radius: 20px;
-
-    background: white;
-
-    box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.12);
-}
-
-
-
-
-```css
-/* =========================
-   APPLICATION FORM
-========================= */
-
-.application-form {
-
-    width: 100%;
-
-    max-width: 650px;
-
-    margin: 0 auto;
-
-    padding: 28px;
-
-    background: white;
-
-    border-radius: 22px;
-
-    box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.10);
-}
-
-
-/* =========================
-   FORM HEADING
-========================= */
-
-.form-heading {
-
-    text-align: center;
-
-    margin-bottom: 22px;
-}
-
-
-.form-heading span {
-
-    color: #34b4ec;
-
-    font-size: 12px;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-}
-
-
-.form-heading h1 {
-
-    margin: 6px 0;
-
-    font-size: 28px;
-
-    color: #222;
-}
-
-
-.form-heading p {
-
-    color: #666;
-
-    line-height: 1.4;
-
-    font-size: 14px;
-
-    margin: 0 auto;
-
-    max-width: 500px;
-}
-
-
-/* =========================
-   FORM
-========================= */
-
-form {
-
+.form-row {
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
-    column-gap: 16px;
-
-    row-gap: 0;
+    gap: 18px;
 }
 
 
-/* =========================
-   INPUT GROUP
-========================= */
-
-.input-group {
-
-    margin-bottom: 14px;
+.form-group {
+    margin-bottom: 18px;
 }
 
 
-/* Full width fields */
-
-.input-group:nth-last-of-type(2),
-.input-group:nth-last-of-type(1) {
-
-    grid-column: 1 / -1;
-}
-
-
-.input-group > label {
-
+.form-group label {
     display: block;
 
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 
     font-size: 13px;
 
@@ -449,128 +82,61 @@ form {
 }
 
 
-/* =========================
-   INPUTS
-========================= */
-
-.input-group input,
-.input-group select,
-.input-group textarea {
-
+.form-group input,
+.form-group select,
+.form-group textarea {
     width: 100%;
 
-    padding: 10px 12px;
+    padding: 12px 14px;
 
-    border: 1px solid #d8e3e8;
+    border: 1px solid #dce4e8;
 
-    border-radius: 10px;
+    border-radius: 8px;
 
-    background: #fafcff;
+    background: #fbfdfe;
+
+    outline: none;
 
     font-family: inherit;
 
     font-size: 13px;
 
-    outline: none;
-
     transition: 0.3s ease;
 }
 
 
-.input-group textarea {
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #159ddd;
 
-    min-height: 85px;
+    background: #ffffff;
 
+    box-shadow: 0 0 0 3px rgba(21, 157, 221, 0.10);
+}
+
+
+.form-group textarea {
     resize: vertical;
+
+    min-height: 90px;
 }
 
 
-.input-group input:focus,
-.input-group select:focus,
-.input-group textarea:focus {
-
-    border-color: #34b4ec;
-
-    background: white;
-
-    box-shadow:
-        0 0 0 3px rgba(52, 180, 236, 0.10);
-}
-
-
-/* =========================
-   CHECKBOX
-========================= */
-
-.checkbox-group {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 7px;
-}
-
-
-.checkbox-group label {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 5px;
-
-    padding: 7px 10px;
-
-    border: 1px solid #dce8ee;
-
-    border-radius: 18px;
-
-    background: #f8fcff;
-
-    cursor: pointer;
-
-    font-size: 12px;
-
-    transition: 0.3s ease;
-}
-
-
-.checkbox-group label:hover {
-
-    border-color: #34b4ec;
-
-    background: #eefaff;
-}
-
-
-.checkbox-group input {
-
-    width: auto;
-
-    accent-color: #34b4ec;
-}
-
-
-/* =========================
+/* =========================================
    BUTTON
-========================= */
+========================================= */
 
-button {
-
-    grid-column: 1 / -1;
-
+.form-card button {
     width: 100%;
-
-    padding: 12px;
-
-    margin-top: 3px;
 
     border: none;
 
-    border-radius: 10px;
+    padding: 13px;
 
-    background: #34b4ec;
+    border-radius: 8px;
+
+    background: #168fc8;
 
     color: white;
 
@@ -584,348 +150,219 @@ button {
 }
 
 
-button:hover {
-
-    background: #209ed5;
+.form-card button:hover {
+    background: #087db5;
 
     transform: translateY(-2px);
-
-    box-shadow:
-        0 8px 20px rgba(52, 180, 236, 0.25);
 }
 
 
-/* =========================
+/* =========================================
+   BLUE INFORMATION CARD
+========================================= */
+
+.info-card {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 70px 55px;
+
+    min-height: 650px;
+
+    background: #168fc8;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    border-radius: 0 24px 24px 0;
+}
+
+
+/* Small curved decoration */
+
+.info-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 50%;
+
+    right: -220px;
+    bottom: -180px;
+}
+
+
+/* =========================================
+   INFORMATION CONTENT
+========================================= */
+
+.info-label {
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+
+.info-card h1 {
+    font-size: clamp(36px, 4vw, 52px);
+
+    line-height: 1.08;
+
+    margin-bottom: 28px;
+
+    color: #ffffff;
+}
+
+
+.info-card p {
+    max-width: 520px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.92);
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================================
+   BENEFITS
+========================================= */
+
+.benefit {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-top: 17px;
+}
+
+
+.check {
+    width: 32px;
+    height: 32px;
+
+    min-width: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.16);
+
+    font-weight: bold;
+}
+
+
+.benefit strong {
+    display: block;
+
+    font-size: 14px;
+
+    margin-bottom: 3px;
+}
+
+
+.benefit small {
+    display: block;
+
+    font-size: 11px;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* =========================================
+   SECOND & THIRD SECTION
+========================================= */
+
+.involvement-section + .involvement-section {
+    margin-top: 70px;
+}
+
+
+/* =========================================
    TABLET
-========================= */
+========================================= */
 
-@media (max-width: 1000px) {
-
-    .grid-box {
-
-        grid-template-columns: 1fr;
-
-    }
-
-    .application-form {
-
-        max-width: 750px;
-
-    }
-
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 600px) {
-
-    .application-form {
-
-        padding: 22px 16px;
-
-        border-radius: 18px;
-
-    }
-
-
-    .form-heading {
-
-        margin-bottom: 20px;
-
-    }
-
-
-    .form-heading h1 {
-
-        font-size: 25px;
-
-    }
-
-
-    form {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
-    .input-group:nth-last-of-type(2),
-    .input-group:nth-last-of-type(1) {
-
-        grid-column: auto;
-
-    }
-
-
-    .input-group {
-
-        margin-bottom: 14px;
-
-    }
-
-
-    .checkbox-group {
-
-        flex-direction: column;
-
-    }
-
-
-    .checkbox-group label {
-
-        width: 100%;
-
-    }
-
-}
-
-
-/* =========================
-   VERY SMALL MOBILE
-========================= */
-
-@media (max-width: 400px) {
-
-    .application-form {
-
-        padding: 18px 13px;
-
-    }
-
-
-    .form-heading h1 {
-
-        font-size: 23px;
-
-    }
-
-}
-```
-
-
-/* Mobile */
-
-@media (max-width: 600px) {
-
-    body {
-
-        padding: 15px;
-
-    }
-
-
-    .application-form {
-
-        padding: 25px 18px;
-
-        border-radius: 18px;
-    }
-
-
-    .form-heading h1 {
-
-        font-size: 28px;
-    }
-
-
-    .checkbox-group {
-
-        flex-direction: column;
-    }
-
-
-    .checkbox-group label {
-
-        width: 100%;
-    }
-
-}
-```
-
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
 
     body {
         padding: 25px;
     }
 
-    .grid-box {
-
+    .involvement-section {
         grid-template-columns: 1fr;
-
-        padding: 30px;
-
-        gap: 30px;
     }
 
-    .form {
+    .info-card {
+        min-height: auto;
 
-        width: 100%;
+        padding: 50px 40px;
+
+        border-radius: 0 0 24px 24px;
     }
 
-    #form {
-
-        width: 100%;
-
-        min-height: 700px;
+    .form-card {
+        padding: 40px;
     }
 
 }
 
 
-/* =========================
+/* =========================================
    MOBILE
-========================= */
+========================================= */
 
 @media (max-width: 600px) {
 
     body {
-
         padding: 12px;
-
-        background:
-            linear-gradient(
-                160deg,
-                #ffffff 0%,
-                #ffffff 55%,
-                #dff4ff 100%
-            );
     }
 
-
-    .grid-box {
-
-        padding: 20px 15px;
-
+    .involvement-section {
         border-radius: 18px;
-
-        gap: 25px;
     }
 
-
-    .content h1 {
-
-        font-size: 34px;
+    .form-card {
+        padding: 25px 20px;
     }
 
-
-    .content span {
-
-        font-size: 16px;
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
+    .info-card {
+        padding: 40px 25px;
 
-    .content p {
-
-        font-size: 15px;
-
-        line-height: 1.7;
+        border-radius: 0 0 18px 18px;
     }
 
-
-    /* Slider becomes full width */
-
-    .slider {
-
-        width: 100%;
-
-        margin: 25px 0;
-
-        padding: 12px 0;
-    }
-
-
-    .img-rotat {
-
-        gap: 12px;
-
-        animation-duration: 16s;
-    }
-
-
-    .img-rotat img {
-
-        width: 115px;
-
-        height: 155px;
-    }
-
-
-    /* Help cards */
-
-    .help-container {
-
-        padding: 20px;
-
-        margin-top: 20px;
-    }
-
-
-    .help-container h2 {
-
-        font-size: 21px;
-    }
-
-
-    .small-sec {
-
-        font-size: 14px;
-
-        padding: 10px 14px;
-    }
-
-
-    /* Google form */
-
-    #form {
-
-        width: 100%;
-
-        min-height: 700px;
-
-        border-radius: 15px;
+    .info-card h1 {
+        font-size: 36px;
     }
 
 }
-
-
-/* =========================
-   VERY SMALL PHONES
-========================= */
-
-@media (max-width: 400px) {
-
-    .grid-box {
-
-        padding: 15px 10px;
-    }
-
-
-    .content h1 {
-
-        font-size: 29px;
-    }
-
-
-    .img-rotat img {
-
-        width: 100px;
-
-        height: 135px;
-    }
-
-
-    .help-container {
-
-        padding: 15px;
-    }
-
-}
-
-
