@@ -1,3 +1,6 @@
+/* =========================================
+   RESET
+========================================= */
 
 * {
     margin: 0;
@@ -5,34 +8,48 @@
     box-sizing: border-box;
 }
 
+
+/* =========================================
+   BODY
+========================================= */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+
     background: #ffffff;
+
     color: #222;
+
     padding: 40px;
 }
 
 
 /* =========================================
-   MAIN LAYOUT
+   MAIN SECTION
 ========================================= */
 
 .involvement-section {
+
     width: 100%;
+
     max-width: 1250px;
 
-    margin: 0 auto 60px;
+    margin: 0 auto 70px;
 
     display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
+
+    grid-template-columns: 1fr 1fr;
 
     gap: 0;
 
-    border-radius: 24px;
-
     overflow: hidden;
 
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.10);
+    border-radius: 24px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.10);
 }
 
 
@@ -41,35 +58,35 @@ body {
 ========================================= */
 
 .form-card {
+
     background: #ffffff;
 
     padding: 45px 50px;
 
     display: flex;
+
     align-items: center;
 }
 
 
 .form-card form {
+
     width: 100%;
 }
 
 
-.form-row {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 18px;
-}
-
+/* =========================================
+   FORM GROUP
+========================================= */
 
 .form-group {
+
     margin-bottom: 18px;
 }
 
 
 .form-group label {
+
     display: block;
 
     margin-bottom: 7px;
@@ -83,8 +100,8 @@ body {
 
 
 .form-group input,
-.form-group select,
 .form-group textarea {
+
     width: 100%;
 
     padding: 12px 14px;
@@ -106,20 +123,22 @@ body {
 
 
 .form-group input:focus,
-.form-group select:focus,
 .form-group textarea:focus {
-    border-color: #159ddd;
+
+    border-color: #168fc8;
 
     background: #ffffff;
 
-    box-shadow: 0 0 0 3px rgba(21, 157, 221, 0.10);
+    box-shadow:
+        0 0 0 3px rgba(22, 143, 200, 0.10);
 }
 
 
 .form-group textarea {
+
     resize: vertical;
 
-    min-height: 90px;
+    min-height: 100px;
 }
 
 
@@ -128,17 +147,18 @@ body {
 ========================================= */
 
 .form-card button {
+
     width: 100%;
 
-    border: none;
-
     padding: 13px;
+
+    border: none;
 
     border-radius: 8px;
 
     background: #168fc8;
 
-    color: white;
+    color: #ffffff;
 
     font-size: 14px;
 
@@ -151,28 +171,33 @@ body {
 
 
 .form-card button:hover {
+
     background: #087db5;
 
     transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(22, 143, 200, 0.25);
 }
 
 
 /* =========================================
-   BLUE INFORMATION CARD
+   INFORMATION CARD
 ========================================= */
 
 .info-card {
+
     position: relative;
 
     overflow: hidden;
 
-    padding: 70px 55px;
-
     min-height: 650px;
+
+    padding: 65px 55px;
 
     background: #168fc8;
 
-    color: white;
+    color: #ffffff;
 
     display: flex;
 
@@ -184,30 +209,34 @@ body {
 }
 
 
-/* Small curved decoration */
+/* Decorative circle */
 
 .info-card::after {
+
     content: "";
 
     position: absolute;
 
     width: 400px;
+
     height: 400px;
 
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    right: -220px;
+
+    bottom: -180px;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
 
     border-radius: 50%;
-
-    right: -220px;
-    bottom: -180px;
 }
 
 
 /* =========================================
-   INFORMATION CONTENT
+   INFORMATION TEXT
 ========================================= */
 
 .info-label {
+
     font-size: 12px;
 
     font-weight: bold;
@@ -219,6 +248,11 @@ body {
 
 
 .info-card h1 {
+
+    position: relative;
+
+    z-index: 2;
+
     font-size: clamp(36px, 4vw, 52px);
 
     line-height: 1.08;
@@ -230,6 +264,11 @@ body {
 
 
 .info-card p {
+
+    position: relative;
+
+    z-index: 2;
+
     max-width: 520px;
 
     font-size: 14px;
@@ -247,6 +286,11 @@ body {
 ========================================= */
 
 .benefit {
+
+    position: relative;
+
+    z-index: 2;
+
     display: flex;
 
     align-items: center;
@@ -258,7 +302,9 @@ body {
 
 
 .check {
+
     width: 32px;
+
     height: 32px;
 
     min-width: 32px;
@@ -266,6 +312,7 @@ body {
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     border-radius: 50%;
@@ -277,6 +324,7 @@ body {
 
 
 .benefit strong {
+
     display: block;
 
     font-size: 14px;
@@ -286,20 +334,12 @@ body {
 
 
 .benefit small {
+
     display: block;
 
     font-size: 11px;
 
     color: rgba(255, 255, 255, 0.75);
-}
-
-
-/* =========================================
-   SECOND & THIRD SECTION
-========================================= */
-
-.involvement-section + .involvement-section {
-    margin-top: 70px;
 }
 
 
@@ -310,23 +350,31 @@ body {
 @media (max-width: 950px) {
 
     body {
+
         padding: 25px;
     }
 
+
     .involvement-section {
+
         grid-template-columns: 1fr;
+
     }
 
-    .info-card {
-        min-height: auto;
-
-        padding: 50px 40px;
-
-        border-radius: 0 0 24px 24px;
-    }
 
     .form-card {
+
         padding: 40px;
+    }
+
+
+    .info-card {
+
+        min-height: auto;
+
+        padding: 55px 40px;
+
+        border-radius: 0 0 24px 24px;
     }
 
 }
@@ -339,30 +387,68 @@ body {
 @media (max-width: 600px) {
 
     body {
+
         padding: 12px;
     }
 
+
     .involvement-section {
+
         border-radius: 18px;
+
+        margin-bottom: 35px;
     }
+
 
     .form-card {
-        padding: 25px 20px;
+
+        padding: 28px 20px;
     }
 
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
 
     .info-card {
+
         padding: 40px 25px;
 
         border-radius: 0 0 18px 18px;
     }
 
+
     .info-card h1 {
+
         font-size: 36px;
+    }
+
+
+    .info-card p {
+
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .form-card {
+
+        padding: 23px 16px;
+    }
+
+
+    .info-card {
+
+        padding: 35px 20px;
+    }
+
+
+    .info-card h1 {
+
+        font-size: 31px;
     }
 
 }
